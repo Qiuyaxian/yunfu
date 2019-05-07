@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>确认单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    <script src="../../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../../js/app.js" type="text/javascript"></script>
+</head>
+<body class="bg-f0f0f0">
+<header class="header-inner">
+    <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+    <span>确认单</span>
+</header>
+<section class="container mt-header">
+    <div class="order-confirm-title">收货地址</div>
+    <div class="order-address">
+        <a href="#" class="order-address-wrap clearfix">
+            <div class="left">
+                <div class="order-name">墨渊君（小哈）</div>
+                <div class="order-adds clearfix">
+                    <div class="order-icon left"><img src="../images/pay_address.png"></div>
+                    <div class="adds left">广东省广州市白云区同和镇同和村福强路68号</div>
+                </div>
+                <div class="order-adds clearfix">
+                    <div class="order-icon left"><img src="../images/pay_phone.png"></div>
+                    <div class="adds left">13868889999</div>
+                </div>
+            </div>
+            <div class="right"><img src="../images/next.png"></div>
+        </a>
+    </div>
+    <div class="order-confirm-title">购买商品</div>
+    <div class="order-confirm-product clearfix">
+        <div class="left product-pic"><img src="../images/oil-card.jpg"></div>
+        <div class="left product-info">
+            <div>时尚体验版油卡-全国中石化、中石油（赠送5000积分）</div>
+            <div class="product-count">数量：1</div>
+            <div class="product-price">售价：￥5000</div>
+        </div>
+    </div>
+    <div class="order-confirm-title">备注信息</div>
+    <div class="order-confirm-textarea">
+        <textarea placeholder="请填写您的备注"></textarea>
+    </div>
+    <div class="order-confirm-title">付款方式</div>
+    <div class="order-confirm-pay clearfix">
+        <div class="pay-type choose">
+            <img src="../images/pay_wechat.png" class="pay-icon" alt="微信支付">
+            <div>微信支付</div>
+            <div class="pay-choose"><img src="../images/pay_choose.png" class="已选"></div>
+        </div>
+        <div class="pay-type">
+            <img src="../images/pay_ailpay.png" class="pay-icon" alt="支付宝支付">
+            <div>支付宝支付</div>
+            <div class="pay-choose"><img src="../images/pay_choose.png" class="已选"></div>
+        </div>
+        <div class="pay-downline">
+            <div>线下支付</div>
+            <div class="pay-choose"><img src="../images/pay_choose.png" class="已选"></div>
+        </div>
+    </div>
+    <a href="javascript:void(0)" class="transfer-submit">提交</a>
+</section>
+<script type="text/javascript">
+    $(function () {
+        //付款方式选择
+        $('.order-confirm-pay').on('click','div',function () {
+            $(this).addClass('choose').siblings().removeClass('choose');
+        });
+    });
+</script>
+</body>
+</html>

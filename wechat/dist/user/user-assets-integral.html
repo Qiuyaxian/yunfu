@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>资产中心</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.min.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+    <script src="../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+</head>
+
+<body class="lightyellow">
+  <header class="header-inner">
+    <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+      <span class="title">资产中心</span>
+  </header>
+
+  <section class="mt-header" id="assets-center">
+     <div class="" id="">
+          <ul class="tab-head tab-head-default"> 
+            <li class="tab-item tab-item-default active">
+                <a href="../user/user-assets.html" class="block">积分</a>
+            </li>
+            <li class="tab-item tab-item-default">
+                <a href="../user/user-assets-wallet.html" class="block">钱包</a>
+            </li>
+            <li class="tab-item tab-item-default">
+                <a href="../user/user-assets-reward.html" class="block">奖励</a>
+            </li>
+            <li class="tab-item tab-item-default">
+                <a href="../user/user-assets-oil.html" class="block">油卡</a>
+            </li>
+            <li class="tab-item tab-item-default">
+                <a href="../user/user-assets-protocol.html" class="block">协议</a>
+            </li>
+          </ul>
+     </div>
+     <div class="navTab-top" id="">
+          <!-- score start -->
+          <div class="tab-switch hide" id="score">
+                <div class="assets-banner">
+                     <!-- 遮罩 -->
+                     <div class="assets-mask">
+                       
+                     </div>
+                     <div class="assets-score">
+                          <div class="assets-text">拥有云联惠积分</div>
+                          <div class="assets-number">20000</div>
+                     </div>
+                     <img src="../images/assets-banner.png" class="assets-bg" alt="">
+                </div>
+
+                <div class="tab-head" id="assets-score-tab">
+                    <div class="tab-item tab-item-default active">
+                         全部
+                    </div>
+                    <div class="tab-item tab-item-default">
+                         收入积分
+                    </div>
+                    <div class="tab-item tab-item-default">
+                         支出积分
+                    </div>
+                </div>
+                <div class="tab-body white">
+                    <div class="tab-switch">
+                         <div class="assets-table-head padding-30">
+                               <span class="assets-table-type">来源/用途</span>
+                               <span class="assets-table-number">积分变化</span>
+                               <span class="assets-table-time">日期</span>
+                          </div>
+                          <ul class="assets-table-body padding-30">
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number add">+5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number">+5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number reduse">-5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number reduse">-5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number reduse">-5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number reduse">-5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number reduse">-5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number reduse">-5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number reduse">-5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number reduse">-5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                             <li class="assets-table-item">
+                               <span class="assets-table-type">购买体验型油卡一张</span>
+                               <span class="assets-table-number reduse">-5</span>
+                               <span class="assets-table-time">2017-02-01</span>
+                             </li>
+                          </ul>
+                    </div>
+
+                    <div class="tab-switch hide">
+                         收入积分
+                    </div>
+                    
+                    <div class="tab-switch hide">
+                         支出积分
+                    </div>
+                    
+                </div>
+          </div>
+          <!-- score end -->
+          <!-- wallet start -->
+          <div class="tab-switch hide" id="wallet">
+                <div class="assets-banner t-center">
+                     <p class="use-balance">可用余额</p>
+                     <div class="wallet-number">￥20000</div>
+                     <div class="">
+                         <button type="button" class="wallet-submit">提现</button>
+                     </div>
+                </div>
+                <div class="white">
+                    <div class="wallet-line-box t-center">
+                       <span class="wallet-line"></span>
+                       <span class="wallet-user-history">使用记录</span>
+                       <span class="wallet-line"></span>
+                    </div>
+                    <ul>
+                      <li class="clearfix wallet-item b-bottom">
+                          <div class="wallet-type">
+                             <h4 class="type-title">平台充值</h4>
+                             <p class="type-time">2016-06-05 15：30</p>
+                          </div>
+                          <div class="type-price">
+                             ￥42.00
+                          </div>
+                      </li>
+                      <li class="clearfix wallet-item b-bottom">
+                          <div class="wallet-type">
+                             <h4 class="type-title">平台充值</h4>
+                             <p class="type-time">2016-06-05 15：30</p>
+                          </div>
+                          <div class="type-price">
+                             ￥42.00
+                          </div>
+                      </li>
+                      <li class="clearfix wallet-item b-bottom">
+                          <div class="wallet-type">
+                             <h4 class="type-title">平台充值</h4>
+                             <p class="type-time">2016-06-05 15：30</p>
+                          </div>
+                          <div class="type-price">
+                             ￥42.00
+                          </div>
+                      </li>
+                      <li class="clearfix wallet-item b-bottom">
+                          <div class="wallet-type">
+                             <h4 class="type-title">平台充值</h4>
+                             <p class="type-time">2016-06-05 15：30</p>
+                          </div>
+                          <div class="type-price">
+                             ￥42.00
+                          </div>
+                      </li>
+                      <li class="clearfix wallet-item b-bottom">
+                          <div class="wallet-type">
+                             <h4 class="type-title">平台充值</h4>
+                             <p class="type-time">2016-06-05 15：30</p>
+                          </div>
+                          <div class="type-price">
+                             ￥42.00
+                          </div>
+                      </li>
+                      <li class="clearfix wallet-item b-bottom">
+                          <div class="wallet-type">
+                             <h4 class="type-title">平台充值</h4>
+                             <p class="type-time">2016-06-05 15：30</p>
+                          </div>
+                          <div class="type-price">
+                             ￥42.00
+                          </div>
+                      </li>
+                      <li class="clearfix wallet-item b-bottom">
+                          <div class="wallet-type">
+                             <h4 class="type-title">平台充值</h4>
+                             <p class="type-time">2016-06-05 15：30</p>
+                          </div>
+                          <div class="type-price">
+                             ￥42.00
+                          </div>
+                      </li>
+                    </ul>
+                </div>
+          </div>
+          <!-- wallet end -->
+
+          <!-- reward start -->
+          <div class="tab-switch hide" id="reward">
+               <div class="tab-head" id="assets-reward">
+                    <div class="tab-item tab-item1 active">
+                         推荐奖
+                    </div>
+                    <div class="tab-item tab-item1">
+                         消费奖
+                    </div>
+                    <div class="tab-item tab-item1">
+                         活动奖
+                    </div>
+                </div>
+                <div class="tab-body white">
+                     <div class="tab-switch">
+                          <ul>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                          </ul>
+                     </div>
+                     <div class="tab-switch hide">
+                          <ul>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                          </ul>
+                     </div>
+                     <div class="tab-switch hide">
+                          <ul>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                              <li class="clearfix wallet-item b-bottom">
+                                  <div class="wallet-type">
+                                     <h4 class="type-title">推荐XXX成为代理</h4>
+                                     <p class="type-time">2016-06-05 15：30</p>
+                                  </div>
+                                  <div class="type-price">
+                                     ￥42.00
+                                  </div>
+                              </li>
+                          </ul>
+                     </div>
+                </div>
+          </div>
+          <!-- reward end -->
+
+          <!-- oil card start -->
+          <div class="tab-switch" id="oil-card">
+               <!-- assets-banner start -->
+               <div class="assets-banner">
+                    <div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                 <img src="../images/banner-card.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                 <img src="../images/banner-card.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                 <img src="../images/banner-card.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+               </div>
+               <!-- assets-banner end -->
+               <div class="">
+                    <div class="tab-head" id="card-two-level">
+                        <div class="tab-item tab-item1 active">
+                             更换使用人
+                        </div>
+                        <div class="tab-item tab-item1">
+                             充值
+                        </div>
+                        <div class="tab-item tab-item1">
+                             换卡
+                        </div>
+                        <div class="tab-item tab-item1">
+                             挂失
+                        </div>
+                    </div>
+                    <div class="white">
+                         <div class="tab-switch">
+                               <div class="wallet-line-box t-center">
+                                   <span class="wallet-line"></span>
+                                   <span class="wallet-user-history">使用记录</span>
+                                   <span class="wallet-line"></span>
+                                </div>
+                                <ul>
+                                    <li class="clearfix wallet-item b-bottom">
+                                        <div class="wallet-type">
+                                           <h4 class="type-title">平台充值</h4>
+                                           <p class="type-time">2016-06-05 15：30</p>
+                                        </div>
+                                        <div class="type-price">
+                                           ￥42.00
+                                        </div>
+                                    </li>
+                                    <li class="clearfix wallet-item b-bottom">
+                                        <div class="wallet-type">
+                                           <h4 class="type-title">平台充值</h4>
+                                           <p class="type-time">2016-06-05 15：30</p>
+                                        </div>
+                                        <div class="type-price">
+                                           ￥42.00
+                                        </div>
+                                    </li>
+                                    <li class="clearfix wallet-item b-bottom">
+                                        <div class="wallet-type">
+                                           <h4 class="type-title">平台充值</h4>
+                                           <p class="type-time">2016-06-05 15：30</p>
+                                        </div>
+                                        <div class="type-price">
+                                           ￥42.00
+                                        </div>
+                                    </li>
+                                    <li class="clearfix wallet-item b-bottom">
+                                        <div class="wallet-type">
+                                           <h4 class="type-title">平台充值</h4>
+                                           <p class="type-time">2016-06-05 15：30</p>
+                                        </div>
+                                        <div class="type-price">
+                                           ￥42.00
+                                        </div>
+                                    </li>
+                                    <li class="clearfix wallet-item b-bottom">
+                                        <div class="wallet-type">
+                                           <h4 class="type-title">平台充值</h4>
+                                           <p class="type-time">2016-06-05 15：30</p>
+                                        </div>
+                                        <div class="type-price">
+                                           ￥42.00
+                                        </div>
+                                    </li>
+                                </ul>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="add-card-bottom padding-30">
+                    <a href="javascrip:void(0);" class="add-card-btn">添加油卡</a>
+               </div>
+          </div>
+          <!-- oil card end -->
+
+          <!-- protocol start -->
+          <div class="tab-switch hide" id="protocol">
+               <ul class="white protocol-list">
+                 <li class="protocol-item b-bottom">
+                     <a href="javascript:void(0);">XXXXXXXXXXXX协议</a>
+                 </li>
+                 <li class="protocol-item b-bottom">
+                     <a href="javascript:void(0);">XXXXXXXXXXXX协议</a>
+                 </li>
+                 <li class="protocol-item b-bottom">
+                     <a href="javascript:void(0);">XXXXXXXXXXXXXXXXXXX协议</a>
+                 </li>
+                 <li class="protocol-item b-bottom">
+                     <a href="javascript:void(0);">XXXXXXXXXXXXXXXXXXX协议XXXXXXXXXXXXXXXXXXX协议XXXXXXXXXXXXXXXXXXX协议</a>
+                 </li>
+                 <li class="protocol-item b-bottom">
+                     <a href="javascript:void(0);">XXXXXXXXXXXX协议</a>
+                 </li>
+                 <li class="protocol-item b-bottom">
+                     <a href="javascript:void(0);">XXXXXXXXXXXX协议</a>
+                 </li>
+               </ul>
+          </div>
+          <!-- protocol end -->
+     </div>
+
+  </section>
+  
+  <script type="text/javascript">
+      $(function () {
+           $(".swiper-container").swiper({
+                loop: true,
+                autoplay: 3000
+           });
+      });
+  </script>
+</body>
+</html>

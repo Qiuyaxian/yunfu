@@ -1,0 +1,149 @@
+#service-index{
+    width: 100%;
+    height: 100%;
+    background: url(../images/icon/service_bg.png) no-repeat left top;
+    background-size: cover;
+}
+#service-index-list{
+    padding-top: 0.8rem;
+}
+#service-index-list li{
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.service-index-item{
+    
+    width: 3.35rem;
+    height: 2rem;
+    padding-top: 0.4rem;
+    background: rgba(133,117,79,0.9);
+}
+#service-index-list li{
+    
+}
+#service-index-list li:nth-of-type(2n+2){
+    margin-right: 0;
+}
+.server-text{
+    font-size: .28rem;
+    line-height: .48rem;
+    color: white;
+    margin-top: 0.01rem;
+}
+
+.phone-mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 9999;
+}
+.phone-dial{
+    position: fixed;
+    z-index: 10000;
+    width: 4.8rem;
+    height: 3.28rem;
+    background: white;
+    left:50%;
+    margin-left: -2.4rem;
+    top:3.1rem;
+}
+
+.phone-dial-box{
+    height: 2.5rem;
+    position: relative;
+}
+
+.phone-dial-op{
+    height: 0.8rem;
+    font-size: 0.3rem;
+    line-height: 0.35rem;
+}
+
+.phone-dial-op .cannel{
+    background: #b6a069;
+    color: white;
+    height: 100%;
+    padding-top: .22rem;
+}
+
+.phone-dial-op .enter{
+    background: #2c2c2e;
+    color: #b6a069;
+    height: 100%;
+    padding-top: .22rem;
+}
+.phone-dial-title{
+    font-size: 0.32rem;
+    line-height: 0.35rem;
+    font-weight: bold;
+    padding: 0.3rem 0;
+}
+.phone-dial-text{
+    font-size: 0.26rem;
+    line-height: 0.35rem;
+    color:#999999;
+    padding-top: 0.38rem;
+}
+.phone-dial-close{
+    width: 0.46rem;
+    height: 0.46rem;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.25rem;
+    background: url(../images/icon/login_close.png) no-repeat left top;
+    background-size: cover;
+}
+
+
+/* complaint */
+select[size], select[multiple], select[size][multiple] {
+    border:none;
+}
+.complaint-select-box{
+   
+}
+.complaint-select{
+    background: #7e714e;
+    width: 100%;
+    color: white;
+    line-height: 0.48rem;
+    font-size: 0.28rem;
+    padding: .2rem .3rem;
+}
+.complaint-textarea-box{
+    margin-top: 0.25rem;
+}
+
+
+.complaint-submit-box{
+   margin-top: 1rem;
+}
+.complaint-submit{
+   width: 100%;
+   background: #484848;
+   color: white;
+   font-size: 0.32rem;
+   line-height: 0.54rem;
+   border:none;
+   padding: 0.2rem 0;
+} 
+
+/* opinion  */
+
+.opinion-prompt{
+    margin-top: 0.36rem;
+    font-size: 0.24rem;
+    line-height: 0.26rem;
+    color: #b9a36a;
+}
+
+/* interview */
+.interview-list{
+   padding-top: 0.4rem;
+}
+

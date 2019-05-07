@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>转账</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    <script src="../../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+
+    <script src="../libs/ajaxfileupload/ajaxfileupload.js" type="text/javascript"></script>
+
+    <script src="../../js/app.js" type="text/javascript"></script>
+</head>
+<body class="bg-f0f0f0">
+<header class="header-inner">
+    <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+    <span>转账</span>
+</header>
+<section class="container mt-header">
+    <div class="transfer-flow"><img src="../images/flow.png" alt="流程"></div>
+    <div class="transfer-info">
+        <div class="transfer-tip">转账信息<span>（请将款项转入以下银行卡）</span></div>
+        <div class="transfer-info-list"><img src="../images/zz_person.png">户名：广东云蚨网络科技有限公司</div>
+        <div class="transfer-info-list"><img src="../images/zz_card.png">帐号：3911 6010 0100 110221</div>
+        <div class="transfer-info-list"><img src="../images/zz_bank.png">开户行：兴业银行广州番禺支行</div>
+    </div>
+    <form action="#">
+        <div class="order-form">
+            <div class="transfer-input-wrap">
+                <label for="bank">转账银行</label>
+                <input type="text" id="bank" value="中国银行广州支行" placeholder="请输入转账银行" autocomplete="off">
+            </div>
+            <div class="transfer-input-wrap">
+                <label for="person">开户人</label>
+                <input type="text" id="person" value="王二哈" placeholder="请输入开户人" autocomplete="off">
+            </div>
+            <div class="transfer-input-wrap">
+                <label for="num">卡号</label>
+                <input type="text" id="num" value="6226 5526 2212 3191 956" placeholder="请输入您的卡号" autocomplete="off">
+            </div>
+            <div class="transfer-input-wrap">
+                <label for="money">金额</label>
+                <input type="text" id="money" value="100" placeholder="请输入金额" autocomplete="off">
+            </div>
+            <div class="transfer-input-wrap">
+                <label for="safe">安全密码</label>
+                <input type="password" id="safe" value="" placeholder="请输入您的支付密码" autocomplete="off">
+            </div>
+            <div class="transfer-input-wrap">
+                <label for="transfer">转账流水号</label>
+                <input type="text" id="transfer" value="6226 5526 2212 3191 956" placeholder="请输入转账流水号" autocomplete="off">
+            </div>
+        </div>
+        <div class="transfer-upload">
+            <div class="upload-title">上传凭证</div>
+            <div class="upload-tip">请确保凭证清晰无修改、破损，图片大小不超过1MB支持JPG、PNG、GIF等格式。</div>
+            <div class="upload-img clearfix">
+                <!-- <div class="upload-item">
+                    <img src="../images/banner.jpg">
+                </div> -->
+                <div class="add-pic">
+                    <img src="../images/pic_add.png">
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="提交" class="transfer-submit">
+        <div class="transfer-note">使用银行卡转账支付后，由财务部审核，审核时间为3个工作日， 节假日顺延，请耐心等待！</div>
+    </form>
+</section>
+<script type="text/javascript">
+    $(function () {
+        /*$('#file').on('change',function(){
+             app.upload({
+                url:'http://192.168.0.172:8080/yfu-web/base/imageUpload',
+                fileInput:'file',　　　　　  //需要上传的文件域的ID，即<input type="file">的ID。
+                secureuri:true,　　　　　　　  //是否启用安全提交，默认为false。 
+                dataType:'html',　　　　　　　   //服务器返回的数据类型。可以为xml,script,json,html。如果不填写，jQuery会自动判断。　　　　　　　　　 //自定义参数。这个东西比较有用，当有数据是与上传的图片相关的时候，这个东西就要用到了。
+                uploadBox: 'upload-img', //设置上传框容器
+                showBox : 'upload-item', //设置显示预览图片的容器
+                allowType: ["gif", "jpeg", "jpg", "png"],
+            });     
+        });*/
+        app.addImg();
+    });
+</script>
+</body>
+</html>

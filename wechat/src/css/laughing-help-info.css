@@ -1,0 +1,72 @@
+/*帮助中心详情*/
+.help-info{
+	background: #f0f0f0;
+}
+.help-info .container{
+	background: #ffffff;
+}
+.help-info .line{
+	height: 0.2rem;
+	background: #f0f0f0;
+}
+.help-info .question{
+	width: 90%;
+	margin:0 auto; 
+	padding-top: 0.4rem;
+	padding-bottom: 0.3rem;
+	overflow: hidden;
+	border-bottom: 1px solid #cccccc;
+}
+.help-info .label{
+	width: 10%;
+	height: 100%;
+	font-size: 0.35rem;
+	color: #cccccc;
+	float: left;
+	/*text-align: center;*/
+
+}
+.help-info .label img{
+	width: 0.4rem;
+	margin-top: 0.1rem;
+
+}
+.help-info .tip-hidden{
+	color: #fff;
+}
+.help-info .label-info{
+	width: 90%;
+	float: left;
+	font-size: 0.3rem;
+	font-weight: bold;
+	line-height: 0.56rem;
+}
+.help-info .label-info img{
+	margin-top: 0.3rem;
+}
+.help-info .answer{
+	width: 90%;
+	margin:0 auto;
+	overflow: hidden;
+	padding: 0.3rem 0;
+}
+.help-info .reminder{
+	width: 90%;
+	margin:0 auto;
+	overflow: hidden;
+	font-size: 0.24rem;
+	line-height: 0.48rem;
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 0.6rem;
+}
+.help-info .tip{
+	width: 90%;
+	float: left;
+}	
+.help-info .reminder p{
+	
+}
+.tip-title{
+	font-weight: bold;
+	color: #e22c30;
+}

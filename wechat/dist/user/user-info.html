@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+    <script src="../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../libs/ajaxfileupload/ajaxfileupload.js" type="text/javascript"></script>
+    
+    <script src="../libs/weui/js/city-picker.js"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+
+</head>
+
+<body class="lightyellow">
+  <header class="header-inner">
+    <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+    <span>个人信息</span>
+  </header>
+  <section class="mt-header" id="user-center">
+     
+     <!-- contont start -->
+     <div class="user-wrapper white">
+          <ul class="">
+            <li class="b-bottom">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                      <p>头像</p>
+                  </div>
+                  <div class="weui-cell__ft">
+
+                      <label for="userImg" class="user-head-box">
+                           <img src="../images/userHead.png" class="user-head-box" alt="">
+                      </label>
+
+                      <input type="file" id="userImg" name="file" value="" class="hide">
+
+                      <input type="hidden" id="src" name="file" value="" class="hide">
+
+                      <input type="hidden" id="old" name="file" value="" class="hide">
+                  </div>
+                </a>
+            </li>
+            <li class="b-bottom">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                      <p>性别</p>
+                  </div>
+                  <div class="weui-cell__ft">
+                      <input type="hidden" id="sexResulte" class="weui-input pkq-width t-right" name="sex" value="">
+                      <!-- <label for="sex" id="sexLabel"></label> -->
+                      <input type="text" id="sex" class="weui-input pkq-width t-right" name="" value="女" readonly="readonly">
+                  </div>
+                </a>
+            </li>
+            <li class="b-bottom">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                      <p>昵称</p>
+                  </div>
+                  <div class="weui-cell__ft weui-cell__ft-none">
+                      <input type="text" id="" class="weui-input pkq-width t-right" name="" value="李钟硕">
+                  </div>
+                </a>
+            </li>
+            <li class="b-bottom">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                       <p>手机</p>
+                  </div>
+                  <div class="weui-cell__ft weui-cell__ft-none">
+                       13532333232
+                  </div>
+                </a>
+            </li>
+            <li class="b-bottom">
+                
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                       <p>邮箱</p>
+                  </div>
+                  <div class="weui-cell__ft weui-cell__ft-none">
+                       123456789@163.com
+                  </div>
+                </a>
+            </li>
+            <li class="b-bottom">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                       <p>生日</p>
+                  </div>
+                  <div class="weui-cell__ft weui-cell__ft-none">
+                        
+                  <input type="text" id="time" class="weui-input pkq-width t-right" name="" value="2017-05-05 " readonly="readonly">
+                  </div>
+                </a>
+            </li>
+            <li class="b-bottom">
+                <a class="weui-cell weui-cell_access clearfix" href="javascript:;">
+                  <div class="weui-cell__bd col-3">
+                       <p>所在城市</p>
+                  </div>
+                  <div class="weui-cell__ft col-7">
+                       <div class="clearfix">
+                           <div class="left col-3">
+                                <input type="text" class="weui-input t-right" id="province" name="" value="湖北省" readonly="readonly" />
+                           </div>
+                           <div class="left col-3">
+                                <input type="text" class="weui-input t-right" id="city" name="" value="武汉市" readonly="readonly" />
+                           </div>
+                           <div class="left col-3">
+                                <input type="text" class="weui-input t-right" id="area" name="" value="武昌区" readonly="readonly" />
+                           </div>
+
+                       </div>
+                       
+                       
+                      
+
+                       
+                  </div>
+                </a>
+            </li>
+            <li class="b-bottom">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                       <p>真实姓名</p>
+                  </div>
+                  <div class="weui-cell__ft weui-cell__ft-none">
+                       陈夏生
+                  </div>
+                </a>
+            </li>
+          </ul>
+     </div>
+     <!-- contont end -->
+
+
+     <!-- contont start -->
+     <div class="user-wrapper white">
+          <ul class="">
+            <li class="b-bottom">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                      <p>云联惠ID</p>
+                  </div>
+                  <div class="weui-cell__ft weui-cell__ft-none">
+                     1256431145
+                  </div>
+                </a>
+            </li>
+            <li class="b-bottom">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                      <p>云蚨ID</p>
+                  </div>
+                  <div class="weui-cell__ft weui-cell__ft-none">
+                      152114545
+                  </div>
+                </a>
+            </li>
+            <li class="b-bottom">
+                
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                      <p>推荐人</p>
+                  </div>
+                  <div class="weui-cell__ft weui-cell__ft-none">
+                      成呵呵
+                  </div>
+                </a>
+            </li>
+            
+          </ul>
+     </div>
+     <!-- contont end -->
+     <div class="user-info-submit-box t-center">
+         <button type="button" class="pkq-inline-submit">保存</button>
+     </div>
+  </section>
+  
+
+  <script type="text/javascript">
+      $(function () {
+          //图片上传
+          $('#userImg').on('change',function(){
+              app.upload({
+                   fileInput:'userImg',　　　　    
+                   srcInput:'src',                
+                   oldInput:'old',
+              });
+          });
+          
+          //省市县三级联动
+          app.level([
+              {
+                displayValue:'province',
+                title: "请选择省份",
+              },
+              {
+                displayValue:'city',
+                title: "请选择城市",
+              },
+              {
+                displayValue:'area',
+                title: "请选择区域",
+              },
+              
+          ]);
+          //性别选择
+          app.scrollSelect({
+            scrollId:'sex',
+            title: "请选择您的性别",
+            data: [
+                {
+                    textAlign:'center',
+                    values:[
+                        {
+                          'text':'男',
+                          'id':1
+                        },{
+                          'text':'女',
+                          'id':2
+                        }
+                    ]
+                }
+            ],
+            onChange: function(p, v,dv) {
+              console.log(p, v, dv);
+              $('#sexResulte').val(p.nowSelect);
+            },
+            onClose: function(p, v, d) {
+              console.log(p, v, d);
+            }
+          });
+         //日期选择
+         app.datetime({
+             datetimeId:'time',
+              title: '选择出生年月日',
+              yearSplit: '-',
+              monthSplit: '-',
+              times: function () {
+                return null;
+              },
+              onChange: function (picker, values, displayValues) {
+                console.log(values);
+              }
+          }); 
+          
+      });
+  </script>
+</body>
+</html>

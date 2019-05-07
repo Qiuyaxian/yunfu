@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+    <meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+    <title>购车</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lucky.css">
+    <link rel="stylesheet" type="text/css" href="css/jonas.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="./libs/template7/template7.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div class="header-1 black-bg">
+    <div class="container header-cont-1 clearfix">
+        <span class="inline-block left">您好，欢迎光临云蚨商城！</span>
+        <div class="right">
+            <a href="my-center.html" class="header-link-2">我的云蚨</a>
+            <a href="order.html" class="header-link-2">我的订单</a>
+            <div class="inline-block relative header-box">
+                <a href="my-center.html" class="header-link-3">帮助中心</a>
+                <ul class="abs header-list">
+                    <li><a href="help-center.html">帮助中心</a></li>
+                    <li><a href="return-service.html">返修/退换货</a></li>
+                    <li><a href="complain-center.html">投诉中心</a></li>
+                    <li><a href="advice-center.html">意见和建议</a></li>
+                    <li><a href="make-appointment.html">预约</a></li>
+                    <li><a href="customer-call.html">电话客服/在线客服</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="header-link-4" onclick="addFavorite()"><i class="star-icon"></i>收藏本站</a>
+            <a href="customer-call.html" class="header-link-4"><i class="call-icon"></i>联系客服</a>
+        </div>
+    </div>
+</div>
+<div class="header-2 black-bg">
+    <div class="container clearfix">
+        <div class="left">
+            <img src="images/lucky-img/logo.png">
+        </div>
+        <div class="right">
+            <img src="images/lucky-img/head-phone-white.png">
+        </div>
+    </div>
+</div>
+<div class="nav-bar">
+    <div class="container nav-bar-box">
+        <a href="index.html">首页</a>
+        <a href="shopping-car.html">购物车</a>
+        <a href="my-center.html">个人中心</a>
+    </div>
+</div>
+<div class="breadcrumb">
+    <div class="container">
+        <a href="index.html">首页</a>
+        <a href="buy-car.html" class="active">汽车</a>
+    </div>
+</div>
+<div class="container car-box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="images/lucky-img/banner.png"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="images/lucky-img/banner.png"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="images/lucky-img/banner.png"></a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+    <div class="car-choose clearfix">
+        <div class="left car-type">
+            <div class="car-title">汽车</div>
+            <ul class="car-list clearfix">
+                <li class="left" data-id="1">宝马</li>
+                <li class="left" data-id="2">奥迪</li>
+                <li class="left" data-id="3">长城</li>
+                <li class="left" data-id="4">凯迪拉克</li>
+                <li class="left" data-id="5">吉利</li>
+                <li class="left" data-id="6">更多</li>
+            </ul>
+        </div>
+        <div class="right car-img relative">
+            <img src="images/lucky-img/big-car.png" class="car-bigImg">
+            <ul class="car-smImgList">
+                <li class="left" data-id="1"><img src="images/lucky-img/car-1.png"></li>
+                <li class="left" data-id="1"><img src="images/lucky-img/car-2.png"></li>
+                <li class="left" data-id="1"><img src="images/lucky-img/car-3.png"></li>
+                <li class="left" data-id="1"><img src="images/lucky-img/car-4.png"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="car-info">
+        <div class="car-menu">
+            <span class="car-tabMenu active" id="tab-1">商品属性</span>
+            <span class="car-tabMenu" id="tab-2">购车下单</span>
+        </div>
+        <div class="car-tab-box">
+            <div class="car-info-1">
+                <div class="car-textList">
+                    商品名称：宝贝虎新款加长版118儿童电动车四轮汽车可坐带遥控玩具宝宝电动车摇摆车 红色+拉杆+双电瓶+MP3插口+遥控+摇摆<br>
+                    商品编号：10739170113<br>
+                    店铺： 赫誉母婴专营店<br>
+                    商品毛重：16.0kg<br>
+                    商品产地：中国大陆<br>
+                    货号：新款BBH-118<br>
+                    驱动：双驱动<br>
+                    功能：遥控，换挡，音乐，摇摆车，缓启动
+                </div>
+                <div class="car-infoList">
+                    <img src="images/lucky-img/goods-info.png">
+                </div>
+            </div>
+            <div class="car-info-2 none">
+                <form class="car-form">
+                    <input type="hidden" name="">
+                    <div class="car-item">
+                        <label class="car-label">姓名</label>
+                        <input type="text" name="uername" class="car-input">
+                    </div>
+                    <div class="car-item">
+                        <label class="car-label">电话</label>
+                        <input type="text" name="phone" class="car-input">
+                    </div>
+                    <div class="car-item">
+                        <label class="car-label">车型</label>
+                        <input type="text" name="type" class="car-input" id="car-style" readonly="readonly" value="宝马">
+                        <input type="hidden" name="type" id="car-style-hidden">
+                    </div>
+                    <div class="car-item carType-choose">
+                        <input type="radio" name="radio" value="" id="radio-1" class="car-checkbox" checked="true">
+                        <label for="radio-1"><span></span>推荐车型</label>
+                        <input type="radio" name="radio" value="" id="radio-2" class="car-checkbox">
+                        <label for="radio-2"><span></span>自定义车型</label>
+                    </div>
+                    <div class="car-item">
+                        <label class="car-label">备注</label>
+                        <input type="text" name="tips" class="car-input">
+                    </div>
+                    <div class="car-btn">
+                        <button type="submit" class="car-submit">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="j-login-footer">
+    <div class="container clearfix">
+        <div class="j-login-foot-1">
+            <a href="#">关于我们</a>
+            <a href="#">售后服务</a>
+            <a href="#">联系我们</a>
+            <a href="#">免责声明</a>
+            <a href="#">法律声明</a>
+        </div>
+        <div class="j-login-foot-2">
+            <span>电话：400-608-9488</span>
+            <span>传真：020-87247609</span> 
+            <span>E-MAIL：info@goodthree.com</span>     
+            <span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+        </div>
+        <div class="j-login-foot-3">
+            <p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+        </div>
+    </div>
+</footer>
+<script id="templ3" type="text/template7">
+    <div class="choose-wrap">
+        <form class="choose-popup">
+            <input type="hidden" name="" id="choose-id">
+            <div class="choose-item">
+                <label class="choose-label">颜色：</label>
+                <div class="choose-right">
+                    {{#each color}}
+                        {{#js_compare "this.id === '1'"}}
+                            <span class="choose-block active" data-id="{{id}}">{{text}}</span>
+                        {{else}}
+                            <span class="choose-block" data-id="{{id}}">{{text}}</span>
+                        {{/js_compare}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="choose-item">
+                <label class="choose-label">发动机：</label>
+                <div class="choose-right">
+                    {{#each type1}}
+                        {{#js_compare "this.id === '1'"}}
+                            <span class="choose-block active" data-id="{{id}}">{{text}}</span>
+                        {{else}}
+                            <span class="choose-block" data-id="{{id}}">{{text}}</span>
+                        {{/js_compare}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="choose-item">
+                <label class="choose-label">变速箱：</label>
+                <div class="choose-right">
+                    {{#each type2}}
+                        {{#js_compare "this.id === '1'"}}
+                            <span class="choose-block active" data-id="{{id}}">{{text}}</span>
+                        {{else}}
+                            <span class="choose-block" data-id="{{id}}">{{text}}</span>
+                        {{/js_compare}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="choose-item">
+                <label class="choose-label choose-numLabel">数量：</label>
+                <div class="choose-right">
+                    <input type="text" class="choose-num" value="1">
+                    <span class="choose-calc">
+                        <span class="choose-btn add-btn">+</span>
+                        <span class="choose-btn reduce-btn">-</span>
+                    </span>
+                    <span class="choose-tips">(当前库存<i class="rest-num">10</i>件)</span>
+                </div>
+            </div>
+            <div class="choose-submit-btn">
+                <button type="button" class="choose-yes">确定</button>
+            </div>
+        </form>
+    </div>
+</script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var popup;
+        var mySwiper = new Swiper ('.swiper-container', {//轮播图效果
+            autoplay : 3000,
+            loop: true,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        });
+
+        $(".car-tabMenu").on("click",function(){//商品属性和购车下单tab效果
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".car-info-"+this.id.split("-")[1]).removeClass('none').siblings().addClass("none");
+        })
+
+        $(".car-list li").on("click",function(){//点击汽车类型切换图片
+            var id = $(this).attr("data-id");
+            $.ajax({
+                url: '/path/to/file',
+                type: 'GET',
+                dataType: 'json',
+                data: {"id": id },
+                success:function(data){
+
+                }
+            })
+        })
+
+        $("#car-style-hidden").val($("#car-style").val());
+        $(".car-checkbox").on("click",function(){//车型单选框
+            var thisId = this.id;
+            var that = $(this);
+            var isChecked = that.prop("checked");
+            if(isChecked && thisId == "radio-1"){
+                $("#car-style").val($("#car-style-hidden").val());
+                $("#car-style").attr("readonly","readonly")
+            }else{
+                $("#car-style").removeAttr("readonly");
+                $("#car-style").val("").focus();
+            }
+        })
+
+        $(".car-smImgList li").on("click",function(){//点击汽车小图显示大图
+            var src = $(this).find('img').attr("src");
+            var carId = $(this).attr("data-id");//获取汽车id
+            $(this).parent().siblings(".car-bigImg").attr("src",src);
+        })
+        
+        $(".car-form").validate({//购车下单表单验证
+            rules:{
+                "uername":{
+                    required:true,
+                },
+                "phone":{
+                    required:true,
+                },
+                "type":{
+                    required:true,
+                }
+            },
+            messages:{
+                "uername":{
+                    required:"此项不能为空",
+                },
+                "phone":{
+                    required:"此项不能为空",
+                },
+                "type":{
+                    required:"此项不能为空",
+                }
+            },
+            submitHandler:function(form){//点击提交按钮弹窗
+                var datas = {
+                   'color':[{
+                        id:'1',
+                        'text':'颜色1'
+                    },{
+                        id:'2',
+                        'text':'颜色2'
+                    }],
+                    'type1':[{
+                        id:'1',
+                        'text':'类型1'
+                    },{
+                        id:'2',
+                        'text':'类型2'
+                    }],
+                    'type2':[{
+                        id:'1',
+                        'text':'类型1'
+                    },{
+                        id:'2',
+                        'text':'类型2'
+                    }]
+               };
+               var tmpl = $('#templ3').html(),
+                   compiledTemplate = Template7.compile(tmpl),
+                   //把数据打包丢进模板
+                   tempHtml = compiledTemplate(datas);
+                popup = layer.open({//自定义弹窗
+                    type:1,
+                    title:"选择属性",
+                    area: '510px',//宽度
+                    content:tempHtml,
+                    success: function(layero, index){
+                        $(".choose-block").on("click",function(){//点击弹窗里的选项
+                            var attr = $(this).attr("data-id");
+                            $(this).addClass("active").siblings().removeClass("active");
+                            $.ajax({
+                                url: '/path/to/file',
+                                type: 'POST',
+                                dataType: 'json',
+                                data: {param1: attr},
+                                success:function(data){//返回库存量
+                                    $(".rest-num").text(data);
+                                }
+                            })                
+                        });
+
+                        $(".choose-yes").on("click",function(){//点击确定
+                            var obj = {
+
+                            }
+                        })
+                    }
+                })
+            }
+        });
+
+        $(document).on("click",".choose-yes",function(){//点击弹窗确定按钮，异步提交
+            layer.close(popup);
+        })
+    })
+</script>
+</body>
+</html>

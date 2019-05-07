@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>投诉中心</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    <script src="../../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.min.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+
+    <script src="../libs/validate/jquery.validate.js" type="text/javascript"></script>
+    <script src="../../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../../js/app.js" type="text/javascript"></script>
+</head>
+
+<body class="lightyellow">
+  <header class="header-inner">
+      <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+        <span class="title">投诉中心</span>
+  </header>
+  <section class="mt-header padding-top-2">
+     <div class="padding-30">
+         <form action="" method="POST" accept-charset="utf-8" id="complaint">
+              <div class="complaint-select-box validates-relative">
+                   <input type="text" id="opinion-type" class="complaint-select" name="" value="请选择" readonly="readonly">
+                   <input type="text" id="select-type" class="validates-input" name="types" value="">
+              </div>
+              <div class="complaint-textarea-box white">
+                  <textarea name="complaint" class="f-textarea" placeholder="填写您对我们的不满"></textarea>
+              </div>
+              <div class="complaint-submit-box">
+                  <button type="submit" class="pkq-submit">提交</button>
+              </div>
+         </form>
+    </div>
+  </section>
+  
+
+  <script type="text/javascript">
+      $(function () {
+          /**
+           * 轮播图
+           **/
+          app.validates({
+              "form":$('#complaint'),      //form表单
+              "rules":{               //rules校验规则
+                  'types': {
+                      required: true,
+                  },
+                  'complaint':{
+                      required: true,
+                  }
+              },       
+              "messages":{     //提示信息
+                  
+                  'types': {
+                      required: '请选择类型',
+                  },
+                  'complaint':{
+                     required: '请填写不满',
+                  }
+                  
+              },
+              "showErrors":'top'
+        });
+          app.select({
+            selectId:'opinion-type',
+            data:[
+                {
+                  title: "画画",
+                  value: 1
+                },
+                {
+                  title: "打球",
+                  value: 2
+                },
+                {
+                  title: "唱歌",
+                  value: 3
+                },
+                {
+                  title: "游泳",
+                  value: 4
+                },
+                {
+                  title: "游泳12",
+                  value: 4
+                },
+                {
+                  title: "游泳23",
+                  value: 4
+                }
+              ],
+              onChange:function(obj,d){
+                $('#select-type').val(d.values);
+              },
+              onClose:function(obj,d){
+
+              }
+          })
+      });
+  </script>
+</body>
+</html>

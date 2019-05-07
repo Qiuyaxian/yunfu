@@ -1,0 +1,22 @@
+﻿css        样式文件
+ 
+js         js文件
+
+libs       插件或者框架文件夹
+
+images     图片文件夹
+
+
+login      登陆模块文件夹
+
+index      首页模块文件夹
+
+shopcat    购物车模块文件夹
+
+server     客服模块文件夹
+
+user       我的模块文件
+
+
+
+

@@ -1,0 +1,83 @@
+#accountSecurity{
+	background: #f0f0f0;
+}
+#accountSecurity .tips{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background: #f0f0f0;
+	padding-left: 0.3rem;
+	font-size: 0.24rem;
+}
+#accountSecurity .tips span{
+	color: #e53e42;
+	word-wrap ：break-word
+
+}
+#accountSecurity .info-item{
+	height: 1rem;
+	line-height: 1rem;
+	padding: 0 0.3rem;
+	/* border-bottom: 1px solid #b3b3b3; */
+	background: #fff; 
+}
+#accountSecurity .info-item .label{
+	float: left;
+}
+#accountSecurity .info-item input{
+	text-align: right;
+}
+#accountSecurity .info-item .label-info{
+	float: right;
+}
+#accountSecurity .card{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	padding-left: 0.3rem;
+	background: #f0f0f0;
+}
+#accountSecurity .img-left{
+	width: 50%;
+	float: left;
+	padding: 0.3rem 0;
+}
+#accountSecurity .img-left img{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+
+}
+#accountSecurity .img-right{
+	width: 50%;
+	float: right;
+	padding: 0.3rem 0;
+}
+#accountSecurity .img-right img{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+#accountSecurity .img-container p{
+	padding:0 0.3rem;
+	clear: both;
+	/* overflow: hidden; */
+}
+#accountSecurity .img-container{
+	overflow: hidden;
+	background: #fff;
+}
+#accountSecurity .submit{
+	padding: 1rem 0.3rem;
+}
+#accountSecurity .submit input{
+	width: 96%;
+	display: block;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background: #2c2c2e;
+	color: #fcfcfc;
+	text-align: center;
+	margin: 0 auto;
+}
+#accountSecurity .true-name{
+	border-bottom: 1px solid #e5e5e5;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>客服中心</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    <script src="../../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.min.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+    <script src="../../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../../js/app.js" type="text/javascript"></script>
+</head>
+
+<body id="" class="lightyellow">
+  <header class="header-inner">
+    <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+      <span class="title">客服中心</span>
+  </header>
+  <div class="mt-header padding-top-3">
+      <div class="padding-30">
+           <form action="" method="POST" class="block" accept-charset="utf-8" id="">
+              <div class="complaint-textarea-box white">
+                  <div class="b-top b-bottom clearfix">
+                       <div class="left b-right f-s-col clearfix">
+                            <div class="left b-right t-center c-gray f-s-label">姓名</div>
+                            <div class="left f-s-control">
+                                 <input type="text" class="pkq-width f-s-input" name="" value="陈振聪" />
+                            </div>
+                       </div>
+                       <div class="left f-s-col clearfix">
+                            <div class="left b-right c-gray t-center f-s-label ">电话</div>
+                            <div class="left f-s-control">
+                                 <input type="text" class="pkq-width f-s-input" name="">
+                            </div>
+                       </div>
+                  </div>
+
+                  <div class="b-bottom clearfix padding-h-30">
+                       <div class="left f-m-label c-gray t-center">身份证号</div>
+                       <div class="f-m-control">
+                           <input type="text" class="pkq-width f-s-input" name="" value="442222323232323232" />
+                       </div>
+                  </div>
+
+                  <div class="b-bottom clearfix padding-h-30">
+                       <div class="left clearfix">
+                            <div class="left f-m-label c-gray t-center">代理ID号</div>
+                            <div class="f-m-control">
+                                 <input type="text" class="pkq-width f-s-input" name="" value="陈振聪" />
+                            </div>
+                       </div>
+                  </div>
+
+              </div>
+              
+              <div class="complaint-submit-box">
+                  <button type="submit" class="pkq-submit">提交</button>
+              </div>
+              <ul class="interview-list">
+                <li class="contact-item">
+                   <span class="icon v-middle icon-order_phone"></span>
+                   <span class="v-middle contact-way">商城电话客服：400-610-13652</span>
+                </li>
+                <li class="contact-item">
+                   <span class="v-middle icon icon-order_qq"></span>
+                   <span class="v-middle contact-way">315292258</span>
+                </li>
+                <li class="contact-item">
+                   <span class="v-middle icon icon-order_mail"></span>
+                   <span class="v-middle contact-way">315292258@qq.com</span>
+                </li>
+              </ul>
+         </form>
+      </div>
+       
+  </div>
+
+  <script type="text/javascript">
+      $(function () {
+          /**
+           * 轮播图
+           **/
+          var swiper = new Swiper('#index-swipe', {
+              pagination: '.swiper-pagination',
+              autoplay: 3000,
+              autoplayDisableOnInteraction : false,
+              loop : true,
+              paginationClickable: true
+          });
+          app.tab({
+              'click':'index-tab',    
+              'active':'active',
+              'switchTab':'index-tab-item'
+          })
+      });
+  </script>
+</body>
+</html>

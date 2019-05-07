@@ -1,0 +1,587 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+	<meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+	<title>注册代理</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lucky.css">
+	<link rel="stylesheet" type="text/css" href="css/jonas.css">
+	<script src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div class="j-login-header">
+	<div class="container clearfix">
+		<img src="images/jonas-img/j-logo.png" alt="" class="j-login-logo left">
+		<p class="j-login-p right">已有账号请，<a href="login.html">登录</a></p>
+	</div>
+</div>
+
+<div class="j-login-section j-register">
+	<div class="container j-register-contain clearfix">
+		<ul class="j-register-left left">
+			<li class="j-register-item">
+				<a href="register-vip.html">注册成为会员</a>
+			</li>
+			<li class="j-register-item active">
+				<a href="register-agent.html">注册成为代理</a>
+			</li>
+		</ul>
+		<div class="j-register-right left">
+			<form action="" class="j-register-form j-register-form1">
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">客户姓名</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="您的帐户名和登录名" name="name">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">密码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="建议至少使用两种字符选择" name="password">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">确认密码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="再次确认您的密码" name="repassword">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">手机号码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="常用的手机号码" name="iphone">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">验证码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="请输入手机验证码" name="code">
+					<div class="j-code">获取短信校验码</div>
+				</div>
+				<div class="j-findBack-btn">
+					<button class="j-findBack-submit">下一步</button>
+				</div>
+			</form>
+			<form action="" class="j-register-form  j-register-form2 none">
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">身份证号码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="您的身份证号码" name="idcode">
+				</div>
+				<div class="j-agentCenter-row j-upload clearfix">
+                    <label class="left j-agentCenter-title hidden"></label>
+                    <div class="j-agentCenter-wrap left">
+                    	<p><span class="j-red">*</span>上传身份证</p>
+                        <div class="j-agentCenter-img">
+                            <div class="j-agentCenter-imgWrap">
+                                <img src="" alt="" id="img-2">
+                                <p class="j-selectImg-remind">请上传身份证正面</p>
+                            </div>
+                            <input type="file" id="upload-img2" accept="image/*" class="upload-img none" name="idcare2">
+                            <input type="hidden" name="" id="imgUrl-2">
+                            <label for="upload-img2" class="j-agentCenter-selectImg">
+                                点击选择照片
+                            </label>
+                        </div>
+                        <div class="j-agentCenter-img">
+                            <div class="j-agentCenter-imgWrap">
+                                <img src="" alt="" id="img-3">
+                                <p class="j-selectImg-remind">请上传身份证背面</p>
+                            </div>
+                            <input type="file" id="upload-img3" accept="image/*" class="upload-img none" name="idcare3">
+                            <input type="hidden" name="" id="imgUrl-3">
+                            <label for="upload-img3" class="j-agentCenter-selectImg">
+                                点击选择照片
+                            </label>
+                        </div>
+                        <div class="j-agentCenter-img">
+                            <div class="j-agentCenter-imgWrap">
+                                <img src="" alt="" id="img-4">
+                                <p class="j-selectImg-remind">请上传手持身份证正面照</p>
+                            </div>
+                            <input type="file" id="upload-img4" accept="image/*" class="upload-img none" name="idcare4">
+                            <input type="hidden" name="" id="imgUrl-4">
+                            <label for="upload-img4" class="j-agentCenter-selectImg">
+                                点击选择照片
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="j-agentCenter-row j-upload clearfix">
+                    <label class="left j-agentCenter-title hidden">hidden</label>
+                    <div class="j-agentCenter-wrap left">
+                        <p>样板:</p>
+                        <div class="j-agentCenter-img">
+                            <img src="images/jonas-img/j-id.png" alt="" >
+                            <p>正面</p>
+                        </div>
+                        <div class="j-agentCenter-img">
+                            <img src="images/jonas-img/j-id2.png" alt="" >
+                            <p>反面</p>
+                        </div>
+                        <div class="j-agentCenter-img">
+                            <img src="images/jonas-img/j-hand2.png" alt="" >
+                            <p class="hidden">反面</p>
+                        </div>
+                    </div>
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">开户名</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="银行开户名" name="bankname">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">开户支行</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="请输入开户支行" name="branch">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">银行帐号</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="请输入开户银行帐号" name="bankaccount">
+				</div>
+				<div class="j-findBack-btn">
+					<button class="j-findBack-submit">下一步</button>
+				</div>
+			</form>
+			<form action="" class="j-register-form j-register-form3 none">
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">邮寄地址</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="输入详细地址" name="address">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">收件人</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="收件人姓名" name="addressname">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">收件人手机</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="收件人联系电话" name="addressphone">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">推荐人ID</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="代理推荐人ID（选填）">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">推荐码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="代理推荐推荐码（选填）">
+				</div>
+				<div class="j-register-sel">
+					<input type="checkbox" class="j-registor-check" checked> 
+					<p>阅读并同意<a href="agreement-detail.html">《云蚨用户注册协议》</a></p>
+				</div>
+				<div class="j-findBack-btn">
+					<button class="j-findBack-submit">下一步</button>
+				</div>
+			</form>
+			<form action="" class="j-register-form j-register-form4 none">
+				<div class="j-register-remind">
+					<span class="j-register-icon"></span>
+					<p>使用银行卡转账支付后，由财务部审核，审核时间为3个工作日，节假日顺延，请耐心等待！</p>
+				</div>
+				<div class="j-register-remind">
+					<span class="j-register-icon"></span>
+					<p>转账消息<span>户名：广东云联惠网络科技有限公司   帐号：3911 6010 0100 110221   开户行：兴业银行广州番禺支行</span></p>
+				</div>
+				<div class="j-register-wrap clearfix">
+					<div class="j-register-row">
+						<label class="j-register-name">转账银行</label>
+						<input type="text" name="brank" class="j-register-input">
+					</div>
+					<div class="j-register-row">
+						<label class="j-register-name">金额</label>
+						<input type="text" name="money" class="j-register-input">
+					</div>
+					<div class="j-register-row">
+						<label class="j-register-name">户名</label>
+						<input type="text" name="brankname" class="j-register-input">
+					</div>
+					<div class="j-register-row">
+						<label class="j-register-name">安全密码</label>
+						<input type="password" name="code" class="j-register-input">
+					</div>
+					<div class="j-register-row">
+						<label class="j-register-name">卡号</label>
+						<input type="text" name="number" class="j-register-input">
+					</div>
+					<div class="j-register-row">
+						<label class="j-register-name">转账流水号</label>
+						<input type="text" name="accountnumber" class="j-register-input">
+					</div>
+				</div>
+				<div class="j-agentCenter-row clearfix">
+                    <label class="left j-agentCenter-title">凭证上传</label>
+                    <div class="j-agentCenter-wrap left">
+                        <div class="j-agentCenter-img">
+                            <img src="images/jonas-img/j-user.png" alt="" id="img-1" >
+                            <input type="file" id="upload-img" capture="camera" accept="image/*" 
+                            class="none" onchange="createImg(this,0)">
+                            <label for="upload-img" class="j-agentCenter-selectImg">
+                                选择图片
+                            </label>
+                        </div>
+                    </div>
+                    <p class="j-agentCenter-warning left">请确保凭证清晰无修改、破损，图片大小不超过1MB
+支持JPG、PNG、GIF等格式</p>
+                </div>
+				<div class="j-agentCenter-btn">
+					<button class="j-agentCenter-submit">提交</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<footer class="j-login-footer">
+	<div class="container clearfix">
+		<div class="j-login-foot-1">
+			<a href="#">关于我们</a>
+			<a href="#">售后服务</a>
+			<a href="#">联系我们</a>
+			<a href="#">免责声明</a>
+			<a href="#">法律声明</a>
+		</div>
+		<div class="j-login-foot-2">
+			<span>电话：400-608-9488</span>
+			<span>传真：020-87247609</span> 
+			<span>E-MAIL：info@goodthree.com</span>     
+			<span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+		</div>
+		<div class="j-login-foot-3">
+			<p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+		</div>
+	</div>
+</footer>
+
+
+</body>
+<script src="js/jonas.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload/ajaxfileupload.js"></script>
+<script type="text/javascript" src="js/uploadImg.js"></script>
+<script src="js/validate.addmethod.js"></script>
+<script>
+/*验证码发送*/
+var $code = $('.j-code');
+var $remind = $('.j-findBack-remind');
+var num = 60;
+var btn = true;
+var timer = null;
+
+$code.click(function() {
+	if( btn ){
+		btn = false;
+		num = 60;
+		alert('验证码已发送');
+		$remind.removeClass('hidden');
+
+		timer = setInterval(function(){
+			num--;
+			if( num<0 ){
+				clearInterval(timer);
+				btn = true;
+				$remind.addClass('hidden');
+				$code.html('再次发送').removeClass('active');
+			}else{
+				$code.html(num+'秒').addClass('active')
+			}
+		},1000)
+	}
+});
+
+//图片预览和上传
+(function(){ 
+    //凭证上传
+    $('#upload-img').on('change', function () {
+        mccms.upload({
+            iptid: "upload-img",//文件上传input的id
+            srcid: "imgUrl-1",//提交上传文件地址的input的id
+            url: "/base/imageUpload",//图片异步上传到后台的地址
+            imgid: "img-1",//图片预览img的id
+        })
+    });
+
+    //身份证正面
+    $('#upload-img2').on('change', function () {
+        mccms.upload({
+            iptid: "upload-img2",//文件上传input的id
+            srcid: "imgUrl-2",//提交上传文件地址的input的id
+            url: "/base/imageUpload",//图片异步上传到后台的地址
+            imgid: "img-2",//图片预览img的id
+        })
+    });
+
+    //身份证反面
+    $('#upload-img3').on('change', function () {
+        mccms.upload({
+            iptid: "upload-img3",//文件上传input的id
+            srcid: "imgUrl-3",//提交上传文件地址的input的id
+            url: "/base/imageUpload",//图片异步上传到后台的地址
+            imgid: "img-3",//图片预览img的id
+        })
+    });
+
+    //手持身份证
+    $('#upload-img4').on('change', function () {
+        mccms.upload({
+            iptid: "upload-img4",//文件上传input的id
+            srcid: "imgUrl-4",//提交上传文件地址的input的id
+            url: "/base/imageUpload",//图片异步上传到后台的地址
+            imgid: "img-4",//图片预览img的id
+        })
+    });
+})();
+
+(function(){
+    //协议勾选
+    var $tick = $('.j-registor-check');
+    var $input = $('.j-findBack-submit')
+
+    $tick.click(function(){
+        if( !$(this).prop('checked') ){
+            $input.addClass('active');
+        }else{
+            $input.removeClass('active');
+        }
+    })
+
+    $input.click(function(){
+        if( $(this).hasClass('active') ){
+            return false;
+        }
+    })
+
+
+})();
+
+
+/*表单验证*/
+$(function(){
+    jQuery.validator.addMethod("isPhone",function(value,element){
+    var length = value.length;
+    var mobile = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写正确的手机号码");
+    jQuery.validator.addMethod("isChinese",function(value,element){
+    var length = value.length;
+    var mobile = /^[a-zA-Z]|[\u4e00-\u9fa5]+$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写中文");
+    var $form1 = $(".j-register-form1");
+    var $form2 = $(".j-register-form2");
+    var $form3 = $(".j-register-form3");
+    var $form4 = $(".j-register-form4");
+
+    /* 表单验证 */
+    $form1.validate({
+        rules: {
+            'name': {
+                required: true
+            },
+            'password': {
+                required: true
+            },
+            'repassword': {
+                required: true
+            },
+            'iphone': {
+                required: true
+            },
+            'code': {
+                required: true
+            }
+        },
+        messages: {
+            'name': {
+                required: '请输入账户名或登录名'
+            },
+            'password': {
+                required: '请输入密码'
+            },
+            'repassword': {
+                required: '请输入确认密码'
+            },
+            'iphone': {
+                required: '请输入手机号码'
+            },
+            'code': {
+                required: '请输入手机验证码'
+            }
+        },
+        highlight:function(e){
+        	$(e).parent().addClass('j-wranning');
+        },
+        submitHandler:function(form){
+        	$form1.addClass('none');
+        	$form2.removeClass('none');
+        }
+    });
+
+    $form2.validate({
+        rules: {
+            'idcode': {
+                required: true,
+                isIdCardNo:true
+            },
+            'bankname': {
+                required: true
+            },
+            'branch': {
+                required: true
+            },
+            'bankaccount': {
+                required: true
+            }
+        },
+        messages: {
+            'idcode': {
+                required: '请输入身份证号码'
+            },
+            'bankname': {
+                required: '请输入银行开户号'
+            },
+            'branch': {
+                required: '请输入开户支行'
+            },
+            'bankaccount': {
+                required: '请输入开户银行帐号'
+            }
+        },
+        highlight:function(e){
+        	$(e).parent().addClass('j-wranning');
+        },
+        submitHandler:function(form){
+
+        	var $img = $('.j-agentCenter-imgWrap').find('img');
+
+        	for( var i=0;i<$img.length;i++ ){
+        		if( $img.eq(i).attr('src') === '' ){
+        			layer.msg('请上传照片',{time:1000});
+        			return;
+        		}
+        	}
+
+        	$form2.addClass('none');
+        	$form3.removeClass('none')
+        }
+    });
+
+    $form3.validate({
+        rules: {
+            'address': {
+                required: true
+            },
+            'addressname': {
+                required: true
+            },
+            'addressphone': {
+                required: true
+            }
+        },
+        messages: {
+            'address': {
+                required: '请输入详细地址'
+            },
+            'addressname': {
+                required: '请输入收件人姓名'
+            },
+            'addressphone': {
+                required: '请输入收件人手机'
+            }
+        },
+        highlight:function(e){
+        	$(e).parent().addClass('j-wranning');
+        },
+        submitHandler:function(form){
+
+        	$form3.addClass('none');
+        	$form4.removeClass('none')
+        }
+    });
+
+   $form4.validate({
+        rules: {
+            'brank': {
+                required: true
+            },
+            'money': {
+                required: true
+            },
+            'brankname': {
+                required: true
+            },
+            'code': {
+                required: true
+            },
+            'number': {
+                required: true
+            },
+            'accountnumber': {
+                required: true
+            }
+        },
+        messages: {
+            'brank': {
+                required: '请输入转账银行'
+            },
+            'money': {
+                required: '请输入金额'
+            },
+            'brankname': {
+                required: '请输入户名'
+            },
+            'code': {
+                required: '请输入安全密码'
+            },
+            'number': {
+                required: '请输入卡号'
+            },
+            'accountnumber': {
+                required: '请输入转账流水号'
+            }
+        },
+        highlight:function(e){
+        	$(e).parent().addClass('j-wranning');
+        },
+        submitHandler:function(form){
+        	
+        }
+    });
+});
+</script>
+</html>

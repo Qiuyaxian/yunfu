@@ -1,0 +1,35 @@
+user-index.html:         个人中心首页
+user-setting.html:       设置页面
+
+user-order.html：        我的订单（全部）
+
+user-order-pay.html：    我的订单（待支付）
+
+user-order-goods.html：        我的订单（待收货）
+
+user-order-evaluate.html：        我的订单（待评价）
+
+
+user-message.html：        消息提醒
+
+user-follow.html：        关注中心
+
+user-assets.html：                 资产中心（积分）
+user-assets-wallet.html：          资产中心（钱包）
+user-assets-reward.html：          资产中心（奖励）
+user-assets-oil.html：             资产中心（油卡）
+user-assets-integral.html：        资产中心（积分）
+user-assets-protocol.html：        资产中心（协议）
+
+
+
+
+
+
+user-order-evaluate.html：        代理中心
+
+user-order-evaluate.html：        我的订单（待评价）
+
+user-order-evaluate.html：        我的订单（待评价）
+
+user-order-evaluate.html：        我的订单（待评价）

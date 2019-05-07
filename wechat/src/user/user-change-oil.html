@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>换卡</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.min.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+    <script src="../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+</head>
+
+<body class="lightyellow">
+  <header class="header-inner">
+      <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+      <span class="title">换卡</span>
+  </header>
+  <section class="mt-header padding-top-2" id="oil-card-page">
+     <form action="" class="block white" method="POST" id="" accept-charset="utf-8">
+         <div class="b-bottom clearfix form-rows">
+              <div class="add-label">
+                   卡号
+              </div>
+              <div class="add-input-wrapper">
+                   <input type="text" class="add-input" value="" name="" placeholder="12531456">
+              </div>
+         </div>
+          <div class="b-bottom clearfix form-rows">
+              <div class="add-label">
+                   联系人
+              </div>
+              <div class="add-input-wrapper">
+                   <input type="text" class="add-input" value="" name="" placeholder="输入联系人姓名">
+              </div>
+         </div>
+          <div class="b-bottom clearfix form-rows">
+              <div class="add-label">
+                   联系电话
+              </div>
+              <div class="add-input-wrapper">
+                   <input type="text" class="add-input" value="" name="" placeholder="输入联系人联系电话">
+              </div>
+         </div>
+         <div class="b-bottom clearfix form-rows">
+              <div class="add-label">
+                   换卡地址
+              </div>
+              <div class="add-input-wrapper">
+                   <input type="text" class="add-input" value="" name="" placeholder="广东省广州市白云区">
+              </div>
+         </div>
+         <div class="b-bottom clearfix form-rows">
+              <div class="add-label">
+                   详细地址
+              </div>
+              <div class="add-input-wrapper">
+                   <input type="text" class="add-input" value="" name="" placeholder="具体的街巷单元等">
+              </div>
+         </div>
+         <div class="b-bottom clearfix form-rows">
+              <div class="add-label">
+                   换卡原因
+              </div>
+              <div class="add-input-wrapper">
+                   <input type="text" class="add-input" value="" name="" placeholder="填写换卡的原因">
+              </div>
+         </div>
+         <div class="padding-30 oil-card-box">
+              <a href="javascrip:void(0);" class="add-card-btn">申请换卡</a>
+         </div>
+     </form>
+  </section>
+  
+  <script type="text/javascript">
+      $(function () {
+           $(".swiper-container").swiper({
+                loop: true,
+                autoplay: 3000
+           });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+    <meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+    <title>我的积分</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lucky.css">
+    <link rel="stylesheet" type="text/css" href="css/jonas.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div class="header-1 black-bg">
+    <div class="container header-cont-1 clearfix">
+        <span class="inline-block left">您好，欢迎光临云蚨商城！</span>
+        <div class="right">
+            <a href="my-center.html" class="header-link-2">我的云蚨</a>
+            <a href="order.html" class="header-link-2">我的订单</a>
+            <div class="inline-block relative header-box">
+                <a href="my-center.html" class="header-link-3">帮助中心</a>
+                <ul class="abs header-list">
+                    <li><a href="help-center.html">帮助中心</a></li>
+                    <li><a href="return-service.html">返修/退换货</a></li>
+                    <li><a href="complain-center.html">投诉中心</a></li>
+                    <li><a href="advice-center.html">意见和建议</a></li>
+                    <li><a href="make-appointment.html">预约</a></li>
+                    <li><a href="customer-call.html">电话客服/在线客服</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="header-link-4" onclick="addFavorite()"><i class="star-icon"></i>收藏本站</a>
+            <a href="customer-call.html" class="header-link-4"><i class="call-icon"></i>联系客服</a>
+        </div>
+    </div>
+</div>
+<div class="header-2 black-bg">
+    <div class="container clearfix">
+        <div class="left">
+            <img src="images/lucky-img/logo.png">
+        </div>
+        <div class="right">
+            <img src="images/lucky-img/head-phone-white.png">
+        </div>
+    </div>
+</div>
+<div class="nav-bar">
+    <div class="container nav-bar-box">
+        <a href="index.html">首页</a>
+        <a href="shopping-car.html">购物车</a>
+        <a href="my-center.html">个人中心</a>
+    </div>
+</div>
+<div class="container j-quitAgent clearfix">
+    <div class="j-sidebar left">
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>个人账户信息</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="my-data.html">个人资料</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="account-safe.html">账户安全</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="#">消息订阅</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="#">个人交易信息</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-address.html">收货地址</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>订单中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>关注中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>资产中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="my-wallet.html">我的钱包</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-points.html" class="active">我的积分</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-award.html">我的奖励</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-oilCar.html">我的油卡</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-agreement.html">我的协议</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>代理中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="quit-agent.html">退代理</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="agent-center.html">申请区域代理</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="transfer-agent.html">转让代理权</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-recommend.html">我推荐的人</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>会员中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="apply-agent.html">申请代理</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="recommend-vip.html">推荐会员</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="apply-vip.html">推荐代理</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>客服中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="make-appointment.html">预约</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="complain-center.html">投诉中心</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="advice-center.html">意见和建议</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="return-service.html">返修/退换货</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="customer-call.html">电话客服/在线客服</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="help-center.html">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="j-content right">
+        <div class="j-content-title">我的积分</div>
+        <div class="j-myPoints-content">
+            <div class="j-myPoints-imgWrap clearfix">
+                <div class="j-myPoints-img">
+                    <img src="images/jonas-img/j-integral.png" alt="">
+                    <p class="j-myPoints-Points">拥有云联惠积分：<span>20000</span></p>
+                </div>
+            </div>
+            <div class="j-myRecommend-tab">
+                <span class="active">全部记录</span>
+                <span>收入积分</span>
+                <span>支出积分</span>
+            </div>
+            <table class="j-myRecommend-table">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>收入/支出</th>
+                        <th>备注</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <td>2016-09-20  14:55:20</td>
+                        <td class="j-red">-10</td>
+                        <td>晒单贴奖励京豆(商品号:1429774)</td>
+                    </tr>
+                    <tr>
+                        <td>2016-09-20  14:55:20</td>
+                        <td class="j-green">+20</td>
+                        <td>满意度评价奖励京豆(订单号:48577974061)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="j-myRecommend-table none">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>收入/支出</th>
+                        <th>备注</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <td>2016-09-20  14:55:20</td>
+                        <td class="j-red">-10</td>
+                        <td>晒单贴奖励京豆(商品号:1429774)</td>
+                    </tr>
+                    <tr>
+                        <td>2016-09-20  14:55:20</td>
+                        <td class="j-green">+20</td>
+                        <td>满意度评价奖励京豆(订单号:48577974061)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="j-myRecommend-table none">
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>收入/支出</th>
+                        <th>备注</th>
+                    </tr>
+                </head>
+                <tbody>
+                    <tr>
+                        <td>2016-09-20  14:55:20</td>
+                        <td class="j-red">-10</td>
+                        <td>晒单贴奖励京豆(商品号:1429774)</td>
+                    </tr>
+                    <tr>
+                        <td>2016-09-20  14:55:20</td>
+                        <td class="j-green">+20</td>
+                        <td>满意度评价奖励京豆(订单号:48577974061)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="j-page-box">
+                <div id="laypage"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="j-login-footer">
+    <div class="container clearfix">
+        <div class="j-login-foot-1">
+            <a href="#">关于我们</a>
+            <a href="#">售后服务</a>
+            <a href="#">联系我们</a>
+            <a href="#">免责声明</a>
+            <a href="#">法律声明</a>
+        </div>
+        <div class="j-login-foot-2">
+            <span>电话：400-608-9488</span>
+            <span>传真：020-87247609</span> 
+            <span>E-MAIL：info@goodthree.com</span>     
+            <span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+        </div>
+        <div class="j-login-foot-3">
+            <p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script src="js/laypage/laypage.js"></script>
+<script type="text/javascript">
+(function(){
+    //控制侧边栏
+    var Otitle = $('.j-sidebar-title').get();
+    var list = $('.j-sidebar-list').get();
+
+    for( var i=0;i<Otitle.length;i++ ){
+
+        Otitle[i].index = i;
+        Otitle[i].onOff = true;
+
+        Otitle[i].onclick = function(){
+            if(this.onOff){
+                $(this).find('span').addClass('j-minus')
+            }else{
+                $(this).find('span').removeClass('j-minus')
+            }
+            
+            $(list[this.index]).slideToggle();
+
+            this.onOff = !this.onOff;
+        }
+
+    }
+    
+})();
+
+
+(function(){
+    //tab侧边栏切换
+    var Otab = $('.j-myRecommend-tab').find('span').get();
+    var Otable = $('.j-myRecommend-table').get();
+
+    for( var i=0;i<Otab.length;i++ ){
+
+        Otab[i].index = i;
+
+        Otab[i].onclick = function(){
+            for( var j=0;j<Otab.length;j++ ){
+                $(Otab[j]).removeClass('active');
+                $(Otable[j]).addClass('none')
+            }
+            $(this).addClass('active');
+            $(Otable[this.index]).removeClass('none');
+        }
+
+    };
+
+
+
+})();
+
+(function(){
+    //分页
+    laypage({
+        cont: 'laypage',
+        pages: 6,//总页数
+        curr: 1,//当前页
+        groups: 5//连续显示分页数
+    });
+
+})();
+
+
+</script>
+</body>
+</html>

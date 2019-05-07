@@ -1,0 +1,102 @@
+<!-- 会员中心 -->
+#memberCenter .{
+	width:0.35rem;
+}
+#memberCenter .title{
+	text-align:center:
+	font-size:0.32rem;
+}
+#memberCenter .header-inner{
+	position: static;;
+}
+#memberCenter .author{
+	background: #2c2c2e;
+	padding-bottom: 0.3rem;
+}
+#memberCenter .author div{
+	margin:0 auto;
+	text-align:center;
+
+}
+#memberCenter .author-img{
+	padding: 0.7rem 0 0.25rem 0;
+}
+#memberCenter .author-img img{
+	display: block;
+	margin: 0 auto;
+	width: 1.6rem;
+	border-radius: 1.6rem;
+}
+#memberCenter .author-name{
+	color: #b9a36a;
+	font-size: 0.36rem;
+}
+#memberCenter .author-id{
+	font-size: 0.26rem;
+	line-height: 0.7rem;
+	color: #7a756c;
+	height: 0.8rem;
+}
+#memberCenter .agent{
+	width: 1.8rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	color: #2f2e2f;
+	background: #b6a069;
+}
+#memberCenter .member-tab{
+	padding-top: 0.3rem;
+}
+#memberCenter .tab-option{
+	width: 50%;
+	float: left;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #fff;
+	text-align: center;
+	background: #b6a069;
+}
+#memberCenter .active{
+	background: #2c2c2e;
+}
+#memberCenter .items{
+	height: 1.0rem;
+	line-height: 1.0rem;
+	position: relative;
+	border-bottom: 1px solid #e8e8e8;
+}
+#memberCenter .items img{
+	width: 0.35rem;
+	position: absolute;
+	display: block;
+	top: 0.35rem;
+	left: 0.3rem;
+}
+#memberCenter .items input{
+	height: 100%;
+	line-height: 1.0rem;
+	padding: 0 1rem;
+	float:left;
+}
+#memberCenter .member-tab{
+	overflow: hidden;
+}
+#memberCenter .send{
+	padding: 1rem 0;
+}
+#memberCenter .send input{
+	display: block;
+	width: 90%;
+	height: 0.9rem;
+	margin:0 auto;
+	line-height: 0.9rem;
+	background: #2c2c2e;
+	font-size: 0.32rem;
+	color: #fff;
+}
+#memberCenter .tip{
+	font-size: 0.24rem;
+	color:#a4a4a4;
+	text-align: center;
+	margin-top: 0.3rem;
+}

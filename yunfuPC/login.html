@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+	<meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lucky.css">
+	<link rel="stylesheet" type="text/css" href="css/jonas.css">
+	<script src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div class="j-login-header">
+	<div class="container clearfix">
+		<img src="images/jonas-img/j-logo.png" alt="" class="j-login-logo left">
+		<p class="j-login-p right">已有账号请，<a href="login.html">登录</a></p>
+	</div>
+</div>
+
+<div class="j-login-section j-section">
+	<div class="container j-login-contain" style="background-image:url('images/jonas-img/j-login-bg.png')">
+		<form action="" class="j-login-form" id="j-login-form">
+			<div class="j-login-form-head">账号登录</div>
+			<div class="j-login-form-section">
+				<div class="j-login-form-item clearfix">
+					<span class="left"></span>
+					<div class="left j-login-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-login-input j-1 left" placeholder="请输入您的帐号/手机号码" name="iphone">
+				</div>
+				<div class="j-login-form-item clearfix">
+					<span class="left"></span>
+					<div class="left j-login-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-login-input j-2 left" placeholder="请输入您的密码" name="password">
+				</div>
+				<div class="j-login-form-opt">
+					<a href="findBack-pwd.html">忘记密码</a>
+					<a href="register-vip.html">立即注册</a>
+				</div>
+				<input type="submit" value="立即登录" class="j-login-btn">
+			</div>
+		</form>
+	</div>
+</div>
+
+<footer class="j-login-footer">
+	<div class="container clearfix">
+		<div class="j-login-foot-1">
+			<a href="#">关于我们</a>
+			<a href="#">售后服务</a>
+			<a href="#">联系我们</a>
+			<a href="#">免责声明</a>
+			<a href="#">法律声明</a>
+		</div>
+		<div class="j-login-foot-2">
+			<span>电话：400-608-9488</span>
+			<span>传真：020-87247609</span> 
+			<span>E-MAIL：info@goodthree.com</span>     
+			<span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+		</div>
+		<div class="j-login-foot-3">
+			<p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+		</div>
+	</div>
+</footer>
+</body>
+<script src="js/jonas.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script>
+/*表单验证*/
+$(function(){
+    jQuery.validator.addMethod("isPhone",function(value,element){
+    var length = value.length;
+    var mobile = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写正确的手机号码");
+    jQuery.validator.addMethod("isChinese",function(value,element){
+    var length = value.length;
+    var mobile = /^[a-zA-Z]|[\u4e00-\u9fa5]+$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写中文");
+    var $container = $('.j-errorContainer');
+    /* 表单验证 */
+    $("#j-login-form").validate({
+        rules: {
+            'iphone': {
+                required: true
+            },
+            'password': {
+                required: true
+            }
+        },
+        messages: {
+            'iphone': {
+                required:'请输入账号或者手机号码'
+            },
+            'password': {
+                required:'请输入密码'
+            }
+        },
+        highlight:function(e){
+        	$(e).parent().addClass('j-wranning');
+        }
+    });
+});
+
+</script>
+</html>

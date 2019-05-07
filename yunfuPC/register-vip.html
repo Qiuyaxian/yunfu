@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+	<meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+	<title>注册会员</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lucky.css">
+	<link rel="stylesheet" type="text/css" href="css/jonas.css">
+	<script src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div class="j-login-header">
+	<div class="container clearfix">
+		<img src="images/jonas-img/j-logo.png" alt="" class="j-login-logo left">
+		<p class="j-login-p right">已有账号请，<a href="login.html">登录</a></p>
+	</div>
+</div>
+
+<div class="j-login-section j-register">
+	<div class="container j-register-contain clearfix">
+		<ul class="j-register-left left">
+			<li class="j-register-item active">
+				<a href="register-vip.html">注册成为会员</a>
+			</li>
+			<li class="j-register-item">
+				<a href="register-agent.html">注册成为代理</a>
+			</li>
+		</ul>
+		<div class="j-register-right left">
+			<form action="" class="j-register-form j-register-vip">
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">会员类型</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" value="个人会员" readonly="readonly">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">用户名</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="您的帐户名和登录名" name="name">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">密码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="password" class="j-findBack-input left" placeholder="建议至少使用两种字符选择" name="password">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">确认密码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="password" class="j-findBack-input left" placeholder="再次确认您的密码" name="repassword">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">手机号码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="常用的手机号码" name="iphone">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">验证码</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="请输入手机验证码" name="iphonecode">
+					<div class="j-code">获取短信校验码</div>
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">推荐人ID</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="请输入推荐人ID" name="id">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">身份证</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="请输入身份证" name="idcode">
+				</div>
+				<div class="j-findBack-form-item clearfix">
+					<span class="left">图形验证</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="请输入图形验证码" name="graph">
+					<div class="j-graph"><img src="images/jonas-img/j-code.png" alt=""></div>
+				</div>
+				<div class="j-findBack-btn">
+					<button class="j-findBack-submit active">立即注册</button>
+				</div>
+				<div class="j-register-sel clearfix">
+					<div class="left">
+						<input type="checkbox" class="j-registor-check">
+						<p>阅读并同意<a href="javascript:;">《云蚨用户注册协议》</a></p>
+					</div>
+					<div class="right">
+						<input type="checkbox" class="j-registor-check">
+						<p>已有云联惠帐号</p>
+					</div>
+				</div>
+				<div class="j-findBack-form-item clearfix none j-yunlianhui">
+					<span class="left">云联惠帐号</span>
+					<div class="left j-findBack-line">
+						<span></span>
+					</div>
+					<input type="text" class="j-findBack-input left" placeholder="请输入云联惠帐号" name="account">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<footer class="j-login-footer">
+	<div class="container clearfix">
+		<div class="j-login-foot-1">
+			<a href="#">关于我们</a>
+			<a href="#">售后服务</a>
+			<a href="#">联系我们</a>
+			<a href="#">免责声明</a>
+			<a href="#">法律声明</a>
+		</div>
+		<div class="j-login-foot-2">
+			<span>电话：400-608-9488</span>
+			<span>传真：020-87247609</span> 
+			<span>E-MAIL：info@goodthree.com</span>     
+			<span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+		</div>
+		<div class="j-login-foot-3">
+			<p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+		</div>
+	</div>
+</footer>
+</body>
+<script src="js/jonas.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script>
+/*验证码发送*/
+var $code = $('.j-code');
+var $remind = $('.j-findBack-remind');
+var num = 60;
+var btn = true;
+var timer = null;
+
+$code.click(function() {
+	if( btn ){
+		btn = false;
+		num = 60;
+		alert('验证码已发送');
+		$remind.removeClass('hidden');
+
+		timer = setInterval(function(){
+			num--;
+			if( num<0 ){
+				clearInterval(timer);
+				btn = true;
+				$remind.addClass('hidden');
+				$code.html('再次发送').removeClass('active');
+			}else{
+				$code.html(num+'秒').addClass('active')
+			}
+		},1000)
+	}
+});
+
+(function(){
+    //协议勾选
+    var $tick = $('.j-registor-check');
+    var $input = $('.j-findBack-submit')
+
+    $tick.click(function(){
+        if( !$(this).prop('checked') ){
+            $input.addClass('active');
+        }else{
+            $input.removeClass('active');
+        }
+    })
+
+    $input.click(function(){
+        if( $(this).hasClass('active') ){
+            return false;
+        }
+    })
+
+
+})();
+
+/*表单验证*/
+$(function(){
+    jQuery.validator.addMethod("isPhone",function(value,element){
+    var length = value.length;
+    var mobile = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写正确的手机号码");
+    jQuery.validator.addMethod("isChinese",function(value,element){
+    var length = value.length;
+    var mobile = /^[a-zA-Z]|[\u4e00-\u9fa5]+$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写中文");
+    var $check = $('.j-registor-check');
+
+    $check.get(1).onclick = function(){
+    	if( this.checked ){
+    		$('.j-yunlianhui').removeClass('none');
+    	}else{
+    		$('.j-yunlianhui').addClass('none');
+    	}
+    }
+
+    /* 表单验证 */
+    $(".j-register-form").validate({
+        rules: {
+            'name': {
+                required: true
+            },
+            'password': {
+                required: true
+            },
+            'repassword': {
+                required: true
+            },
+            'iphone': {
+                required: true
+            },
+            'iphonecode': {
+                required: true
+            },
+            'id': {
+                required: true
+            },
+            'idcode': {
+                required: true
+            },
+            'graph':{
+            	required: true
+            }
+        },
+        messages: {
+            'name': {
+                required: '请输入账户名或登录名'
+            },
+            'password': {
+                required: '请输入密码'
+            },
+            'repassword': {
+                required: '请输入确认密码'
+            },
+            'iphone': {
+                required: '请输入手机号码'
+            },
+            'iphonecode': {
+                required: '请输入手机验证码'
+            },
+            'id': {
+                required: '请输入推荐人ID'
+            },
+            'idcode': {
+                required: '请输入身份证'
+            },
+            'graph':{
+            	required: '请输入验证码'
+            }
+        },
+        highlight:function(e){
+        	$(e).parent().addClass('j-wranning');
+        },
+        /* 失去焦点时不验证 */
+        submitHandler:function(form){
+        	if( !$check.get(0).checked ){
+        		alert('需要接受协议')
+        	};
+        }
+    });
+});
+</script>
+</html>

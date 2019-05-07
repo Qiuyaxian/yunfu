@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+    <meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+	<link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+    <title>公告</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lucky.css">
+    <link rel="stylesheet" type="text/css" href="css/jonas.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div class="header-1 black-bg">
+    <div class="container header-cont-1 clearfix">
+        <span class="inline-block left">您好，欢迎光临云蚨商城！</span>
+        <div class="right">
+            <a href="my-center.html" class="header-link-2">我的云蚨</a>
+            <a href="order.html" class="header-link-2">我的订单</a>
+            <div class="inline-block relative header-box">
+                <a href="my-center.html" class="header-link-3">帮助中心</a>
+                <ul class="abs header-list">
+                    <li><a href="help-center.html">帮助中心</a></li>
+                    <li><a href="return-service.html">返修/退换货</a></li>
+                    <li><a href="complain-center.html">投诉中心</a></li>
+                    <li><a href="advice-center.html">意见和建议</a></li>
+                    <li><a href="make-appointment.html">预约</a></li>
+                    <li><a href="customer-call.html">电话客服/在线客服</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="header-link-4" onclick="addFavorite()"><i class="star-icon"></i>收藏本站</a>
+            <a href="customer-call.html" class="header-link-4"><i class="call-icon"></i>联系客服</a>
+        </div>
+    </div>
+</div>
+<div class="header-2 black-bg">
+    <div class="container clearfix">
+        <div class="left">
+            <img src="images/lucky-img/logo.png">
+        </div>
+        <div class="right">
+            <img src="images/lucky-img/head-phone-white.png">
+        </div>
+    </div>
+</div>
+<div class="nav-bar">
+    <div class="container nav-bar-box">
+        <a href="index.html">首页</a>
+        <a href="shopping-car.html">购物车</a>
+        <a href="my-center.html">个人中心</a>
+    </div>
+</div>
+<div class="breadcrumb">
+    <div class="container">
+        <a href="index.html">首页</a>
+        <a href="announce.html" class="active">公告</a>
+    </div>
+</div>
+<div class="container announce-list">
+    <div class="announce-box">
+        <div class="announce-item clearfix">
+            <a href="announce-detail.html" class="inline left cut-string">“广东创新+海珠梦起航”创新创业大赛正式启动</a>
+            <span class="right announce-time">2017-04-14 11:12:11</span>
+        </div>
+        <div class="announce-item clearfix">
+            <a href="announce-detail.html" class="inline left cut-string">“广东创新+海珠梦起航”创新创业大赛正式启动</a>
+            <span class="right announce-time">2017-04-14 11:12:11</span>
+        </div>
+        <div class="announce-item clearfix">
+            <a href="announce-detail.html" class="inline left cut-string">“广东创新+海珠梦起航”创新创业大赛正式启动</a>
+            <span class="right announce-time">2017-04-14 11:12:11</span>
+        </div>
+    </div>
+    <div class="page-box">
+        <div id="laypage"></div>
+    </div>
+</div>
+<footer class="j-login-footer">
+    <div class="container clearfix">
+        <div class="j-login-foot-1">
+            <a href="#">关于我们</a>
+            <a href="#">售后服务</a>
+            <a href="#">联系我们</a>
+            <a href="#">免责声明</a>
+            <a href="#">法律声明</a>
+        </div>
+        <div class="j-login-foot-2">
+            <span>电话：400-608-9488</span>
+            <span>传真：020-87247609</span> 
+            <span>E-MAIL：info@goodthree.com</span>     
+            <span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+        </div>
+        <div class="j-login-foot-3">
+            <p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/laypage/laypage.js"></script>
+<script type="text/javascript">
+    $(function(){
+        laypage({
+            cont: 'laypage',
+            pages: 6,//总页数
+            curr: 1,//当前页
+            groups: 5//连续显示分页数
+        });
+    })
+    function addFavorite() {
+        var url = window.location;
+        var title = document.title;
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.indexOf("360se") > -1) {
+            alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+        }
+        else if (ua.indexOf("msie 8") > -1) {
+            window.external.AddToFavoritesBar(url, title); //IE8
+        }
+        else if (document.all) {
+      try{
+       window.external.addFavorite(url, title);
+      }catch(e){
+       alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+      }
+        }
+        else if (window.sidebar) {
+            window.sidebar.addPanel(title, url, "");
+        }
+        else {
+      alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+        }
+    }
+</script>
+</body>
+</html>

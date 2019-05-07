@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+    <meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+    <title>我的积分</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lucky.css">
+    <link rel="stylesheet" type="text/css" href="css/jonas.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div class="header-1 black-bg">
+    <div class="container header-cont-1 clearfix">
+        <span class="inline-block left">您好，欢迎光临云蚨商城！</span>
+        <div class="right">
+            <a href="my-center.html" class="header-link-2">我的云蚨</a>
+            <a href="order.html" class="header-link-2">我的订单</a>
+            <div class="inline-block relative header-box">
+                <a href="my-center.html" class="header-link-3">帮助中心</a>
+                <ul class="abs header-list">
+                    <li><a href="help-center.html">帮助中心</a></li>
+                    <li><a href="return-service.html">返修/退换货</a></li>
+                    <li><a href="complain-center.html">投诉中心</a></li>
+                    <li><a href="advice-center.html">意见和建议</a></li>
+                    <li><a href="make-appointment.html">预约</a></li>
+                    <li><a href="customer-call.html">电话客服/在线客服</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="header-link-4" onclick="addFavorite()"><i class="star-icon"></i>收藏本站</a>
+            <a href="customer-call.html" class="header-link-4"><i class="call-icon"></i>联系客服</a>
+        </div>
+    </div>
+</div>
+<div class="header-2 black-bg">
+    <div class="container clearfix">
+        <div class="left">
+            <img src="images/lucky-img/logo.png">
+        </div>
+        <div class="right">
+            <img src="images/lucky-img/head-phone-white.png">
+        </div>
+    </div>
+</div>
+<div class="nav-bar">
+    <div class="container nav-bar-box">
+        <a href="index.html">首页</a>
+        <a href="shopping-car.html">购物车</a>
+        <a href="my-center.html">个人中心</a>
+    </div>
+</div>
+<div class="container j-quitAgent clearfix">
+    <div class="j-sidebar left">
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>个人账户信息</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="my-data.html">个人资料</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="account-safe.html">账户安全</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="#">消息订阅</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="#">个人交易信息</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-address.html">收货地址</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>订单中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>关注中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>资产中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="my-wallet.html">我的钱包</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-points.html">我的积分</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-award.html">我的奖励</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-oilCar.html" class="active">我的油卡</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-agreement.html">我的协议</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>代理中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="quit-agent.html">退代理</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="agent-center.html">申请区域代理</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="transfer-agent.html">转让代理权</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-recommend.html">我推荐的人</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>会员中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="apply-agent.html">申请代理</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="recommend-vip.html">推荐会员</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="apply-vip.html">推荐代理</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>客服中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="make-appointment.html">预约</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="complain-center.html">投诉中心</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="advice-center.html">意见和建议</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="return-service.html">返修/退换货</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="customer-call.html">电话客服/在线客服</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="help-center.html">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="j-content right">
+        <div class="j-content-title">我的积分</div>
+        <div class="j-upload-content">
+            <form action="" class="j-register-form j-register-form4">
+                <div class="j-register-remind">
+                    <span class="j-register-icon"></span>
+                    <p>使用银行卡转账支付后，由财务部审核，审核时间为3个工作日，节假日顺延，请耐心等待！</p>
+                </div>
+                <div class="j-register-remind">
+                    <span class="j-register-icon"></span>
+                    <p>转账消息<span>户名：广东云联惠网络科技有限公司   帐号：3911 6010 0100 110221   开户行：兴业银行广州番禺支行</span></p>
+                </div>
+                <div class="j-register-wrap clearfix">
+                    <div class="j-register-row">
+                        <label class="j-register-name">转账银行</label>
+                        <input type="text" name="brank" class="j-register-input">
+                    </div>
+                    <div class="j-register-row">
+                        <label class="j-register-name">金额</label>
+                        <input type="text" name="money" class="j-register-input">
+                    </div>
+                    <div class="j-register-row">
+                        <label class="j-register-name">户名</label>
+                        <input type="text" name="brankname" class="j-register-input">
+                    </div>
+                    <div class="j-register-row">
+                        <label class="j-register-name">安全密码</label>
+                        <input type="password" name="code" class="j-register-input">
+                    </div>
+                    <div class="j-register-row">
+                        <label class="j-register-name">卡号</label>
+                        <input type="text" name="number" class="j-register-input">
+                    </div>
+                    <div class="j-register-row">
+                        <label class="j-register-name">转账流水号</label>
+                        <input type="text" name="accountnumber" class="j-register-input">
+                    </div>
+                </div>
+                <div class="j-agentCenter-row clearfix">
+                    <label class="left j-agentCenter-title">凭证上传</label>
+                    <div class="j-agentCenter-wrap left">
+                        <div class="j-agentCenter-img">
+                            <img src="images/jonas-img/j-documents.png" alt="" id="img-1" >
+                            <input type="file" id="upload-img" capture="camera" accept="image/*" 
+                            class="none" onchange="createImg(this,0)">
+                            <label for="upload-img" class="j-agentCenter-selectImg">
+                                选择图片
+                            </label>
+                        </div>
+                    </div>
+                    <p class="j-agentCenter-warning left">请确保凭证清晰无修改、破损，图片大小不超过1MB
+支持JPG、PNG、GIF等格式</p>
+                </div>
+                <div class="j-agentCenter-btn">
+                    <button class="j-agentCenter-submit">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="j-login-footer">
+    <div class="container clearfix">
+        <div class="j-login-foot-1">
+            <a href="#">关于我们</a>
+            <a href="#">售后服务</a>
+            <a href="#">联系我们</a>
+            <a href="#">免责声明</a>
+            <a href="#">法律声明</a>
+        </div>
+        <div class="j-login-foot-2">
+            <span>电话：400-608-9488</span>
+            <span>传真：020-87247609</span> 
+            <span>E-MAIL：info@goodthree.com</span>     
+            <span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+        </div>
+        <div class="j-login-foot-3">
+            <p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload/ajaxfileupload.js"></script>
+<script type="text/javascript" src="js/uploadImg.js"></script>
+<script>
+(function(){
+    //控制侧边栏
+    var Otitle = $('.j-sidebar-title').get();
+    var list = $('.j-sidebar-list').get();
+
+    for( var i=0;i<Otitle.length;i++ ){
+
+        Otitle[i].index = i;
+        Otitle[i].onOff = true;
+
+        Otitle[i].onclick = function(){
+            if(this.onOff){
+                $(this).find('span').addClass('j-minus')
+            }else{
+                $(this).find('span').removeClass('j-minus')
+            }
+            
+            $(list[this.index]).slideToggle();
+
+            this.onOff = !this.onOff;
+        }
+
+    }
+    
+})();
+
+//图片预览和上传
+(function(){ 
+    //凭证上传
+    $('#upload-img').on('change', function () {
+        mccms.upload({
+            iptid: "upload-img",//文件上传input的id
+            srcid: "imgUrl-1",//提交上传文件地址的input的id
+            url: "/base/imageUpload",//图片异步上传到后台的地址
+            imgid: "img-1",//图片预览img的id
+        })
+    });
+})();
+
+/*表单验证*/
+$(function(){
+    jQuery.validator.addMethod("isPhone",function(value,element){
+    var length = value.length;
+    var mobile = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写正确的手机号码");
+    jQuery.validator.addMethod("isChinese",function(value,element){
+    var length = value.length;
+    var mobile = /^[a-zA-Z]|[\u4e00-\u9fa5]+$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写中文");
+    var $form4 = $(".j-register-form4");
+
+    /* 表单验证 */
+
+   $form4.validate({
+        rules: {
+            'brank': {
+                required: true
+            },
+            'money': {
+                required: true
+            },
+            'brankname': {
+                required: true
+            },
+            'code': {
+                required: true
+            },
+            'number': {
+                required: true
+            },
+            'accountnumber': {
+                required: true
+            }
+        },
+        messages: {
+            'brank': {
+                required: '请输入转账银行'
+            },
+            'money': {
+                required: '请输入金额'
+            },
+            'brankname': {
+                required: '请输入户名'
+            },
+            'code': {
+                required: '请输入安全密码'
+            },
+            'number': {
+                required: '请输入卡号'
+            },
+            'accountnumber': {
+                required: '请输入转账流水号'
+            }
+        },
+        highlight:function(e){
+            $(e).parent().addClass('j-wranning');
+        },
+        submitHandler:function(form){
+            if( !$('#upload-img').val() ){
+                layer.msg('请上传凭证',{
+                    'time':800
+                })
+                return false;
+            }
+        }
+    });
+});
+
+
+</script>
+</body>
+</html>

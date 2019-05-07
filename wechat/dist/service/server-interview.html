@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>预约面谈</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    <script src="../../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.min.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+
+    <script src="../libs/validate/jquery.validate.js" type="text/javascript"></script>
+    <script src="../../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../../js/app.js" type="text/javascript"></script>
+</head>
+
+<body id="service-complaint" class="lightyellow">
+    <header class="header-inner">
+          <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+            <span class="title">预约面谈</span>
+    </header>
+    <section class="mt-header padding-top-2">
+        <div class="padding-30">
+           <form action="" method="POST" accept-charset="utf-8" id="complaint">
+                <div class="white">
+                    <div class="b-top b-bottom clearfix">
+                         <div class="left b-right f-s-col clearfix">
+                              <div class="left b-right t-center f-s-label">姓名</div>
+                              <div class="left f-s-control">
+                                   <input type="text" class="pkq-width f-s-input" name="username" value="陈振聪" />
+                              </div>
+                         </div>
+                         <div class="left f-s-col clearfix">
+                              <div class="left b-right t-center f-s-label">电话</div>
+                              <div class="left f-s-control">
+                                   <input type="text" class="pkq-width f-s-input" name="phone">
+                              </div>
+                         </div>
+                    </div>
+                    <div class="">
+                         <textarea name="text" class="f-textarea" placeholder="备注"></textarea>
+                    </div>
+                </div>
+                
+                <div class="complaint-submit-box">
+                    <button type="submit" class="pkq-submit">提交</button>
+                </div>
+                <!-- interview-list start -->
+                <ul class="interview-list">
+                    <li class="contact-item">
+                       <span class="icon v-middle icon-order_phone"></span>
+                       <span class="v-middle contact-way">商城电话客服：400-610-13652</span>
+                    </li>
+                    <li class="contact-item">
+                       <span class="v-middle icon icon-order_qq"></span>
+                       <span class="v-middle contact-way">315292258</span>
+                    </li>
+                    <li class="contact-item">
+                       <span class="v-middle icon icon-order_mail"></span>
+                       <span class="v-middle contact-way">315292258@qq.com</span>
+                    </li>
+                </ul>
+                <!-- interview-list end -->
+           </form>
+      </div>
+    </section>  
+ 
+
+  <script type="text/javascript">
+      $(function () {
+          /**
+           * 轮播图
+           **/
+         app.validates({
+              "form":$('#complaint'),      //form表单
+              "rules":{               //rules校验规则
+                  
+                  'username':{
+                      required: true,
+                  },
+                  'phone':{
+                      required: true,
+                  },
+                  'text':{
+                      required: true,
+                  }
+              },       
+              "messages":{     //提示信息
+                  
+                  'username':{
+                      required: '请填写姓名',
+                  },
+                  'phone':{
+                      required: '请填写电话号码',
+                  },
+                  'text':{
+                      required: '请填写备注',
+                  }
+                  
+              },
+              "showErrors":'top'
+        });
+          
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* login */
+#login{
+
+}
+#login .f-label{
+    width: 1rem;
+    height: 100%;
+    font-size: 0;
+}
+#login .f-rows{
+   width: 6rem;
+   margin:0.3rem auto;
+}
+#login .f-control{
+    width: 5rem;
+    line-height: 0.44rem;
+    font-size: 0.28rem;
+}
+#login .f-control .f-input{
+    width: 100%;
+    padding: 0 0.2rem;
+}
+
+
+#login .f-control .f-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #e5d09c; opacity:1; 
+}
+
+#login .f-control .f-input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #e5d09c;opacity:1;
+}
+
+#login .f-control .f-input:-ms-input-placeholder{
+    color: #e5d09c;opacity:1;
+}
+
+#login .f-control .f-input::-webkit-input-placeholder{
+    color: #e5d09c;opacity:1;
+}
+#login .login-submit{
+    padding: 0.22rem 0;
+    color: #333333;
+    width: 100%;
+    font-size: 0.32rem;
+    line-height: 0.48rem;
+    margin-top: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+#login .register{
+    color: #e5d09c;
+}
+#login .forget{
+
+}
+
+
+/* register */
+.name-area{
+  padding: .2rem .3rem;
+}
+
+#registerUser .tab-item{
+    font-size: 0;
+    padding: 0.2rem 0;
+}
+#registerUser .tab-item span{
+    font-size: 0.28rem;
+    line-height: 0.48rem;
+    vertical-align: middle;
+    display: inline-block;
+    color: #dac99f;
+}
+#registerUser .active{
+    background: #a48c4e;
+}
+#registerUser .active span{
+    color: white;
+}
+#registerUser .active .icon-agent-no{
+   background: url(../images/icon/login_agency_in.png) no-repeat left top;
+   background-size: contain;
+}
+
+#registerUser .active .icon-member-no{
+   background: url(../images/icon/login_agency_in.png) no-repeat left top;
+   background-size: contain;
+}
+
+.form{
+  
+}
+
+.upload-box,.uploadimg,.uploadHead{
+    width: 1.8rem;
+    height: 1.8rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.photo{
+  position: absolute;
+  right: .4rem;
+  bottom: .16rem;
+  z-index: 3;
+}
+
+.form .name-box{
+   width: 4.9rem;
+}
+.nickname,.realname{
+    
+}
+.realname-input,.nickname-input{
+   font-size: 0.28rem;
+   line-height: 0.3rem;
+   padding: 0.3rem 0;
+}
+.form .f-rows{
+   font-size: 0.28rem;
+   line-height: 1rem;
+}
+.form .f-rows input{
+   font-size: 0.28rem;
+   line-height: 1rem;
+}
+.form .radio{
+   margin-right: .2rem;
+}
+.form input[type="radio"]:checked + span.radio{
+   background: url(../images/icon/personal_address_choose_in.png) no-repeat left top;
+   background-size: cover;
+}
+.form input[type="radio"]:checked + span.radio + span.radio-text{
+   color:#b6a069;
+}
+.radio-box{
+    margin-left: 0.4rem;
+}
+.form input[type="radio"]{
+    width: 1px;
+    height: 1px;
+}
+.register-submit{
+    width: 100%;
+    color: white;
+    font-size: 0.32rem;
+    line-height: 0.88rem;
+}
+.agreement{
+    font-size: 0.28rem;
+    line-height: 0.42rem;
+    margin-top: 0.24rem;
+    margin-bottom: 1rem;
+}
+.register-submit-box{
+    margin-top: 0.7rem;
+}
+.address-item{
+    margin-top: .2rem;
+}
+.address-title{
+    padding: .2rem 0;
+    margin-bottom: .1rem;
+}
+.address-item .party-name,.address-item .user-address{
+    font-size: .3rem;
+    line-height: .4rem;
+}
+.address-item .party-name{
+    margin-right:.2rem; 
+}
+.address-detailed,.address-phone{
+    font-size: .28rem;
+    line-height: .4rem;
+    color: #666666;
+}
+.myaddress{
+  margin-bottom: .2rem;
+}
+.default-status{
+    font-size: .24rem;
+    line-height: .4rem;
+    background: #2c2c2e;
+    color: white;
+    padding: 0 .1rem;
+    position: absolute;
+    right: .3rem;
+}
+.address-handle{
+   padding: .2rem 0;
+}
+.address-item a:hover, .address-item a:focus,.address-item a:link,.address-item a:visited{
+    color: #666666;
+}
+.address-edit,.address-del,.address-default{
+    color: #666666;
+    font-size: .28rem;
+    line-height: .4rem;
+    display: inline-block;
+} 
+.address-edit{
+    margin-right: .4rem;
+}
+
+
+.address-item a.address-default{
+   color: #ff5b3f;
+}
+
+#protocol-detail{
+  margin-top: .3rem;
+}
+
+
+.errorContainer-top{
+  position: fixed;
+  top:-.8rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: .8rem;
+  background: red;
+  z-index: 100;
+  transition: .5s all;
+  -moz-transition: .5s all; /* Firefox 4 */
+  -webkit-transition: .5s all; /* Safari 和 Chrome */
+  -o-transition: .5s all; /* Opera */
+  border-radius: 0;
+}
+.errorContainer-top-active{
+  top:0;
+}
+.errorContainer-top label{
+  font-size: 0.26rem;
+  line-height: 0.36rem;
+  color: white;
+}

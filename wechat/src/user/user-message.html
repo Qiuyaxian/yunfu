@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>设置</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.min.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+    <script src="../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+</head>
+
+<body class="lightyellow">
+  <header class="header-inner">
+      <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+        <span class="title">申请代理</span>
+  </header>
+  <section class="mt-header" id="message-center">
+     <div class="tab-head tab-head-default" id="">
+          <div class="tab-item tab-item-default active" data-href="#notice">
+               公告通知
+          </div>
+          <div class="tab-item tab-item-default" data-href="#promotion">
+               促销通知
+          </div>
+     </div>
+     <div class="navTab-top white" id="">
+          <div class="tab-switch" id="notice">
+              <ul class="padding-30">
+                  <li class="b-bottom notice-item">
+                      <p class="notice-content">习近平在贺电中指出，法国是第一个同新中国正式建交的西方大国。</p>
+                      <p class="notice-time">
+                         <span>2017-05-01</span>
+                         <span>10:09:10</span>
+                      </p>
+                  </li>
+                  <li class="b-bottom notice-item">
+                      <p class="notice-content">习近平在贺电中指出，法国是第一个同新中国正式建交的西方大国。</p>
+                      <p class="notice-time">
+                         <span>2017-05-01</span>
+                         <span>10:09:10</span>
+                      </p>
+                  </li>
+                  <li class="b-bottom notice-item">
+                      <p class="notice-content">习近平在贺电中指出，法国是第一个同新中国正式建交的西方大国。</p>
+                      <p class="notice-time">
+                         <span>2017-05-01</span>
+                         <span>10:09:10</span>
+                      </p>
+                  </li>
+              </ul>
+          </div>
+          <div class="tab-switch hide" id="promotion">
+              <ul class="padding-30">
+                  <li class="b-bottom notice-item">
+                      <p class="notice-content">习近平在贺电中指出，法国是第一个同新中国正式建交的西方大国。</p>
+                      <p class="notice-time">
+                         <span>2017-05-01</span>
+                         <span>10:09:10</span>
+                      </p>
+                  </li>
+                  <li class="b-bottom notice-item">
+                      <p class="notice-content">习近平在贺电中指出，法国是第一个同新中国正式建交的西方大国。</p>
+                      <p class="notice-time">
+                         <span>2017-05-01</span>
+                         <span>10:09:10</span>
+                      </p>
+                  </li>
+                  <li class="b-bottom notice-item">
+                      <p class="notice-content">习近平在贺电中指出，法国是第一个同新中国正式建交的西方大国。</p>
+                      <p class="notice-time">
+                         <span>2017-05-01</span>
+                         <span>10:09:10</span>
+                      </p>
+                  </li>
+              </ul>
+          </div>
+          
+     </div>
+  </section>
+  
+
+  <script type="text/javascript">
+      $(function () {
+          app.tab({
+              'click':'tab-item',    
+              'active':'active',
+              'switchTab':'tab-switch',
+          });
+      });
+  </script>
+</body>
+</html>

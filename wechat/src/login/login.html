@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.min.js" type="text/javascript"></script>
+    <script src="../libs/validate/jquery.validate.js" type="text/javascript"></script>
+    
+    <script src="../libs/weui/js/fastclick.js"></script>
+    
+    <script src="../js/app.js" type="text/javascript"></script>
+
+
+</head>
+<body class="gray">
+   <!-- wrapper start -->
+   <div class="wrapper pkq-width pkq-height">
+
+       <div class="">
+           <img src="../images/logo_bg.png" alt="">
+       </div>
+
+       <div class="">
+          <!-- form start -->
+          <form action="" method="post" class="block padding-29" id="login">
+              <div class="clearfix lighgray f-rows padding-34">
+                 <div class="pkq-width1 left f-label t-center b-right-yellow">
+                      <label for="" class="icon-user inline-block"></label>
+                 </div>
+                 <div class="left f-control">
+                    <input type="text" class="bg-none f-input c-yellow" name="username" placeholder="请输入您的帐号/手机号码" value="" />
+                 </div>
+              </div>
+
+              <div class="clearfix lighgray f-rows padding-34">
+                 <div class="pkq-width1 left f-label t-center b-right-yellow">
+                      <label for="" class="icon-password inline-block"></label>
+                 </div>
+                 <div class="left f-control">
+                    <input type="text" class="bg-none f-input c-yellow" name="password" placeholder="请输入您的密码" value="" />
+                 </div>
+              </div>
+              
+              <div class="f-rows">
+                 <input type="submit" value="登录" class="lighyellow block login-submit" />
+              </div>
+
+              <div class="f-rows clearfix">
+                  
+                  <div class="left col-5 t-left">
+                       <a href="" class="register">立即注册</a>
+                  </div>
+                  <div class="left col-5 t-right">
+                       <a href="" class="forget">忘记密码</a>
+                  </div>
+                  
+              </div>
+              
+          </form> 
+          <!-- form end -->
+       </div>
+   </div>
+   <!-- wrapper end -->
+
+
+   <script type="text/javascript">
+     $(function(){
+          app.validates({
+              "form":$('#login'),      //form表单
+              "rules":{        //rules校验规则
+                 
+                  username: {
+                      required: true,
+                      //minlength: 5
+                  },
+                  password: {
+                      required: true
+                  }
+              },       
+              "messages":{     //提示信息
+                  
+                  username: {
+                      required: "请输入用户名",
+                  },
+                  password: {
+                      required: "请输入密码"
+                  }
+              },
+              "showErrors":'top'     
+          });    
+     })
+   </script>
+</body>
+</html>

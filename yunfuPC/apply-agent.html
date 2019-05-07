@@ -1,0 +1,558 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--不使用IE兼容模式（杂项）-->
+    <meta name="renderer" content="webkit"><!--默认使用极速模式，目前只有360支持，不过已经够了-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--平板或视网膜屏100%缩放显示网页-->
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="icon" href="favicon.ico"><!--客户有需要时添加，ico图标-->
+    <title>代理中心</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lucky.css">
+    <link rel="stylesheet" type="text/css" href="css/jonas.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div class="header-1 black-bg">
+    <div class="container header-cont-1 clearfix">
+        <span class="inline-block left">您好，欢迎光临云蚨商城！</span>
+        <div class="right">
+            <a href="my-center.html" class="header-link-2">我的云蚨</a>
+            <a href="order.html" class="header-link-2">我的订单</a>
+            <div class="inline-block relative header-box">
+                <a href="my-center.html" class="header-link-3">帮助中心</a>
+                <ul class="abs header-list">
+                    <li><a href="help-center.html">帮助中心</a></li>
+                    <li><a href="return-service.html">返修/退换货</a></li>
+                    <li><a href="complain-center.html">投诉中心</a></li>
+                    <li><a href="advice-center.html">意见和建议</a></li>
+                    <li><a href="make-appointment.html">预约</a></li>
+                    <li><a href="customer-call.html">电话客服/在线客服</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="header-link-4" onclick="addFavorite()"><i class="star-icon"></i>收藏本站</a>
+            <a href="customer-call.html" class="header-link-4"><i class="call-icon"></i>联系客服</a>
+        </div>
+    </div>
+</div>
+<div class="header-2 black-bg">
+    <div class="container clearfix">
+        <div class="left">
+            <img src="images/lucky-img/logo.png">
+        </div>
+        <div class="right">
+            <img src="images/lucky-img/head-phone-white.png">
+        </div>
+    </div>
+</div>
+<div class="nav-bar">
+    <div class="container nav-bar-box">
+        <a href="index.html">首页</a>
+        <a href="shopping-car.html">购物车</a>
+        <a href="my-center.html" class="active">个人中心</a>
+    </div>
+</div>
+<div class="container j-quitAgent clearfix">
+    <div class="j-sidebar left">
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>个人账户信息</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="my-data.html">个人资料</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="account-safe.html">账户安全</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="#">消息订阅</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="#">个人交易信息</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-address.html">收货地址</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>订单中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>关注中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>资产中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="my-wallet.html">我的钱包</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-points.html">我的积分</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-award.html">我的奖励</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-oilCar.html">我的油卡</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-agreement.html">我的协议</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title active">
+                <span></span>
+                <p>代理中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="quit-agent.html">退代理</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="agent-center.html">申请区域代理</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="transfer-agent.html">转让代理权</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="my-recommend.html">我推荐的人</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>会员中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="apply-agent.html" class="active">申请代理</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="recommend-vip.html">推荐会员</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="apply-vip.html">推荐代理</a>
+                </li>
+            </ul>
+        </div>
+        <div class="j-sidebar-wrap">
+            <div class="j-sidebar-title">
+                <span></span>
+                <p>客服中心</p>
+            </div>
+            <ul class="j-sidebar-list none">
+                <li class="j-sidebar-item">
+                    <a href="make-appointment.html">预约</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="complain-center.html">投诉中心</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="advice-center.html">意见和建议</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="return-service.html">返修/退换货</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="customer-call.html">电话客服/在线客服</a>
+                </li>
+                <li class="j-sidebar-item">
+                    <a href="help-center.html">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="j-content right">
+        <div class="j-content-title">申请代理</div>
+        <div class="j-agentCenter-content">
+            <form action="" class="j-agentCenter-form">
+                <div class="j-agentCenter-row clearfix">
+                    <label class="left j-agentCenter-title">用户头像</label>
+                    <div class="j-agentCenter-wrap left">
+                        <div class="j-agentCenter-img">
+                            <img src="images/jonas-img/j-user.png" alt="" >
+                            <input type="file" id="upload-img" capture="camera" accept="image/*" 
+                            class="none" onchange="createImg(this,0)">
+                            <label for="upload-img" class="j-agentCenter-selectImg">
+                                选择图片
+                            </label>
+                        </div>
+                    </div>
+                    <p class="j-agentCenter-warning">单张照片不大于500k</p>
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>真实姓名</label>
+                    <input type="text" value="小明" class="j-agentCenter-input" name="name">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>性别</label>
+                     <div class="j-agentCenter-wrap left">
+                        <input type="radio" name="sex" value="1">
+                        <span>男</span>
+                        <input type="radio" name="sex" value="2">
+                        <span>女</span>
+                     </div>
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>手机</label>
+                    <input type="text" value="13560185678" class="j-agentCenter-input" name="iphone">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>邮箱</label>
+                    <input type="text" value="945967891@qq.com" class="j-agentCenter-input" name="email">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>所在城市</label>
+                    <div class="j-agentCenter-wrap left">
+                        <select name="province">
+                            <option>广东省</option>
+                        </select>
+                        <select name="city">
+                            <option>广州市</option>
+                        </select>
+                        <select name="area">
+                            <option>番禺区</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>身份证</label>
+                    <input type="text" placeholder="请输入身份证" class="j-agentCenter-input" name="idcard">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>开户名</label>
+                    <input type="text" placeholder="请输入真实开户姓名" class="j-agentCenter-input" name="account">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>开户支行</label>
+                    <input type="text" placeholder="请输入开户支行" class="j-agentCenter-input" name="branch">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>银行帐号</label>
+                    <input type="text" placeholder="请输入准确银行帐号" class="j-agentCenter-input" name="brankaccount">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>邮寄地址</label>
+                    <input type="text" placeholder="请输入详细邮寄地址" class="j-agentCenter-input" name="address">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>收件人姓名</label>
+                    <input type="text" placeholder="请输入收件人姓名" class="j-agentCenter-input" name="addressname">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>收件人手机</label>
+                    <input type="text" placeholder="请输入收件人手机号" class="j-agentCenter-input" name="addressiphone">
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title"></span>代理推荐人</label>
+                    <input type="text" value="小小明" class="j-agentCenter-input special" readonly='readonly'>
+                </div>
+                <div class="j-agentCenter-row2 clearfix">
+                    <label class="left j-agentCenter-title">推荐人电话</label>
+                    <input type="text" value="13455698888" class="j-agentCenter-input special" readonly='readonly'>
+                </div>
+                <div class="j-agentCenter-row j-upload clearfix">
+                    <label class="left j-agentCenter-title"><span class="j-red">*</span>上传身份证</label>
+                    <div class="j-agentCenter-wrap left">
+                        <div class="j-agentCenter-img">
+                            <div class="j-agentCenter-imgWrap"><img src="" alt="" >
+                            <p class="j-selectImg-remind">请上传身份证正面</p>
+                            </div>
+                            <input type="file" id="upload-img2" capture="camera" accept="image/*" 
+                            class="none" onchange="createImg(this,1)" name="idcare2">
+                            <label for="upload-img2" class="j-agentCenter-selectImg">
+                                点击选择照片
+                            </label>
+                        </div>
+                        <div class="j-agentCenter-img">
+                            <div class="j-agentCenter-imgWrap"><img src="" alt="" >
+                            <p class="j-selectImg-remind">请上传身份证背面</p>
+                            </div>
+                            <input type="file" id="upload-img3" capture="camera" accept="image/*" 
+                            class="none" onchange="createImg(this,2)" name="idcare3">
+                            <label for="upload-img3" class="j-agentCenter-selectImg">
+                                点击选择照片
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="j-agentCenter-row j-upload clearfix">
+                    <label class="left j-agentCenter-title hidden">hidden</label>
+                    <div class="j-agentCenter-wrap left">
+                        <p>样板:</p>
+                        <div class="j-agentCenter-img">
+                            <img src="images/jonas-img/j-id.png" alt="" >
+                            <p>正面</p>
+                        </div>
+                        <div class="j-agentCenter-img">
+                            <img src="images/jonas-img/j-id2.png" alt="" >
+                            <p>反面</p>
+                        </div>
+                    </div>
+                    <p class="j-agentCenter-warning">
+                        <span>1.请保证图片焦点清晰，不可太小或模糊不请</span>
+                        <span>2.不可有反光影响文字显示</span>
+                        <span>3.请让四个边角完整显示；不要用手遮挡身份证</span>
+                        <span>4.请不要自行加水印</span>
+                        <span>5.请不要使用扫描件或复印件</span>
+                    </p>
+                </div>
+                <div class="j-quitAgent-btn">
+                    <input type="submit" value="提交申请">
+                </div>
+                <div class="j-register-sel">
+                    <input type="checkbox" class="j-registor-check">
+                    <p>阅读并同意<span>《云蚨区域代理协议》</span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="j-login-footer">
+    <div class="container clearfix">
+        <div class="j-login-foot-1">
+            <a href="#">关于我们</a>
+            <a href="#">售后服务</a>
+            <a href="#">联系我们</a>
+            <a href="#">免责声明</a>
+            <a href="#">法律声明</a>
+        </div>
+        <div class="j-login-foot-2">
+            <span>电话：400-608-9488</span>
+            <span>传真：020-87247609</span> 
+            <span>E-MAIL：info@goodthree.com</span>     
+            <span>广州市白云区同和街道1128号老庄村君誉商务中心一楼</span>
+        </div>
+        <div class="j-login-foot-3">
+            <p>Copyright 2016 2017 广东云蚨贸易有限公司   粤A2-20044005号 粤ICP备15045834号-2</p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+
+<script type="text/javascript">
+(function(){
+    //控制侧边栏
+    var Otitle = $('.j-sidebar-title').get();
+    var list = $('.j-sidebar-list').get();
+
+    for( var i=0;i<Otitle.length;i++ ){
+
+        Otitle[i].index = i;
+        Otitle[i].onOff = true;
+
+        if( $(Otitle[i]).hasClass('active') ){
+            $(Otitle[i]).get(0).onOff = false;
+            $(Otitle[i]).find('span').addClass('j-minus');
+            $(list[$(Otitle[i]).get(0).index]).slideDown();
+        }
+
+        Otitle[i].onclick = function(){
+            if(this.onOff){
+                $(this).find('span').addClass('j-minus');
+                $(list[this.index]).slideDown();
+            }else{
+                $(this).find('span').removeClass('j-minus');
+                $(list[this.index]).slideUp();
+            }
+
+            this.onOff = !this.onOff;
+        }
+
+    }    
+})();
+
+(function(){
+    //tab侧边栏切换
+    var Otab = $('.j-myRecommend-tab').find('span').get();
+    var Otable = $('.j-myRecommend-table').get();
+
+    for( var i=0;i<Otab.length;i++ ){
+
+        Otab[i].index = i;
+
+        Otab[i].onclick = function(){
+            for( var j=0;j<Otab.length;j++ ){
+                $(Otab[j]).removeClass('active');
+                $(Otable[j]).addClass('none')
+            }
+            $(this).addClass('active');
+            $(Otable[this.index]).removeClass('none');
+        }
+
+    };
+
+
+
+})();
+
+
+//图片预览
+var $Oimg = $('.j-agentCenter-img').find('img');
+
+function createImg(node,index){
+
+    if(node.files[0]){
+        var size = node.files[0].size;
+    }else{
+        return false;
+    }
+
+    if( size/1000 > 500 ){
+        layer.msg('上传的图片大小超出限制',{
+             time:800
+        });
+    }else{
+        var reader = new FileReader();
+        reader.readAsDataURL(node.files[0]);
+        reader.onload = function (e) {                                 
+            imgURL = e.target.result;
+            $Oimg.eq(index).attr('src',imgURL)
+        };
+    }
+}
+
+/*表单验证*/
+$(function(){
+    jQuery.validator.addMethod("isPhone",function(value,element){
+    var length = value.length;
+    var mobile = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写正确的手机号码");
+    jQuery.validator.addMethod("isChinese",function(value,element){
+    var length = value.length;
+    var mobile = /^[a-zA-Z]|[\u4e00-\u9fa5]+$/;
+        return this.optional(element) || (mobile.test(value));
+    },"请填写中文");
+    /* 表单验证 */
+    $(".j-agentCenter-form").validate({
+        rules: {
+            'name': {
+                required: true
+            },
+            'sex': {
+                required: true
+            },
+            'iphone': {
+                required: true
+            },
+            'email': {
+                required: true
+            },
+            'idcard': {
+                required: true
+            },
+            'account': {
+                required: true
+            },
+            'branch': {
+                required: true
+            },
+            'brankaccount': {
+                required: true
+            },
+            'address': {
+                required: true
+            },
+            'addressname': {
+                required: true
+            },
+            'addressiphone': {
+                required: true
+            }
+        },
+        messages: {
+            'name': {
+                required: '请输入姓名'
+            },
+            'sex': {
+                required: '请选择性别'
+            },
+            'iphone': {
+                required: '请输入手机号码'
+            },
+            'email': {
+                required: '请输入邮箱'
+            },
+            'province': {
+                required: '请选择省份'
+            },
+            'city': {
+                required: '请选择市'
+            },
+            'area': {
+                required: '请选择区'
+            },
+            'idcard': {
+                required: '请输入身份证号码'
+            },
+            'account': {
+                required: '请输入开户名'
+            },
+            'branch': {
+                required: '请输入开户支行'
+            },
+            'brankaccount': {
+                required: '请输入银行账号'
+            },
+            'address': {
+                required: '请输入邮寄地址'
+            },
+            'addressname': {
+                required: '请输入收件人姓名'
+            },
+            'addressiphone': {
+                required: '请输入收件人手机'
+            }
+        },
+        highlight:function(e){
+            $(e).parent().addClass('j-wranning');
+        },
+        submitHandler:function(form){
+            /*var $Oimg2 = $('#upload-img2');
+            var Oimg3 = $('#upload-img3');
+
+            if( !Oimg2.value ){
+                layer.msg('请上传身份证正面',{
+                    time:800
+                });
+                return false;
+            }
+
+            if( !Oimg3.value ){
+                layer.msg('请上传身份证背面',{
+                    time:800
+                });
+                return false;
+            }*/
+        }
+    });
+});
+
+</script>
+</body>
+</html>

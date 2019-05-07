@@ -1,0 +1,56 @@
+页面       					说明
+index.html                  首页
+announce.html				公告列表
+announce-detail.html        公告详情
+buy-car.html				购车
+shopping-car.html           购物车
+oil-card.html               我的油卡
+
+login.html					登录
+register-agent.html 		注册代理
+register-vip.html 			注册会员
+findBack-pwd.html			找回密码
+
+agent-center.html  			代理中心(申请区域代理)
+quit-agent.html				退代理
+transfer-agent.html			转让代理权
+my-recommend.html 			我推荐的人
+apply-agent.html			申请代理
+recommend-vip.html			推荐会员
+recommend-agent.html		推荐代理
+
+my-center.html				个人中心
+my-data.html				个人资料
+my-address.html				收货地址
+account-safe.html           账户安全
+name-validate.html			实名认证
+phone-validate.html			手机号码验证
+pwd-validate.html			修改登录密码
+email-validate.html			验证邮箱
+
+order.html					全部订单
+order-appraise.html			订单评价
+order-detail.html			订单详情
+order-settle.html			订单结算
+
+help-center.html 			帮助中心
+helpCenter-detail.html 		帮助详情
+return-service.html			返修/退换货
+complain-center.html		投诉中心
+advice-center.html			意见和建议
+make-appointment.html		预约
+customer-call.html			电话客服/在线客服
+
+my-points.html				我的积分
+my-wallet.html				我的钱包
+withdrawal.html				提现
+add-card.html				新增银行卡
+recharge-form.html			填写充值金额
+my-award.html				我的奖励
+my-oilCar.html				我的油卡
+oilCar-recharge.html		我的油卡充值
+oilCar-upload.html			我的油卡充值上传凭证
+my-agreement.html			我的协议
+agreement-detail.html		我的协议详情
+
+my-focus.html				我的关注

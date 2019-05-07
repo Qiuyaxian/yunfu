@@ -1,0 +1,83 @@
+/* 申请代理 */
+#applyAgency{
+	background: #f0f0f0
+}
+#applyAgency .item{
+	height: 1rem;
+	line-height: 1rem;
+}
+#applyAgency .box{
+	margin-top: 0.3rem;
+	background: #fff;
+}
+#applyAgency .label{
+	padding-left: 0.3rem;
+	font-size: 0.28rem;
+}
+#applyAgency .label-info{
+	float: right;
+	/* text-align: right; */
+	font-size: 0.28rem;
+	padding-right: 0.3rem;
+}
+#applyAgency .label-info input{
+	/* float: right; */
+	text-align: right;
+}
+#applyAgency .tips{
+	padding: 0 0.3rem;
+	font-size: 0.24rem;
+	line-height: 0.48rem;
+	padding-top: 0.3rem;
+	color: #afafaf;
+}
+#applyAgency .tips span{
+	color: red;
+}
+#applyAgency .protocal{
+	margin-top: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	padding: 0 0.3rem;
+	padding-bottom: 0.5rem;
+}
+#applyAgency .protocal input{
+	width: 100%;	
+	text-align: center;
+	font-size: 0.32rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background: #2c2c2e;
+	color: #fff;
+	vertical-align: center;
+}
+#applyAgency .protocal img{
+	width: 0.38rem;
+	vertical-align: middle;
+	margin-right: 0.1rem;	
+}
+#applyAgency .protocal span{
+	font-size: 0.28rem;
+	
+}
+#applyAgency #code{
+	display: block;
+	height: 100%;
+	padding: 0.2rem 0.3rem;
+	background: #b6a069;
+}
+#applyAgency .agency-man{
+
+}
+#applyAgency .agency-phone{
+
+}
+#applyAgency .line{
+	border-right: 1px solid #cbc6c7;
+	margin-left:0.3rem;
+}
+#applyAgency .select{
+	color: #cbc6c7;
+	border: none;
+	outline: none;
+}

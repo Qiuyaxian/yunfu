@@ -1,0 +1,265 @@
+/* form */
+.pkq-submit{
+   width: 100%;
+   background: #484848;
+   color: white;
+   font-size: 0.32rem;
+   line-height: 0.54rem;
+   border:none;
+   padding: 0.2rem 0;
+}
+.pkq-inline-submit{
+   width: 2.5rem;
+   background: #484848;
+   color: white;
+   font-size: 0.32rem;
+   line-height: 0.54rem;
+   border:none;
+   padding: 0.1rem 0;
+   display: inline-block;  
+}
+
+.f-s-label{
+   width: 0.99rem;
+   font-size: 0.24rem;
+   line-height: 0.48rem;
+}
+
+.f-m-label{
+   width: 1.6rem;
+   font-size: 0.24rem;
+   line-height: 0.48rem;
+}
+
+.f-s-col{
+    width: 3.45rem;
+    padding: 0.2rem 0;
+}
+
+.f-s-control{
+   width: 2.44rem;
+   font-size: 0.24rem;
+   line-height: 0.48rem;
+   /* padding-left: .99rem; */
+}
+
+.f-m-control{
+   width: 100%;
+   font-size: 0.24rem;
+   line-height: 0.48rem;
+   padding-left: 1.6rem;
+}
+
+
+.f-s-input{
+   font-size: 0.24rem;
+   line-height: 0.48rem;
+   padding: 0 0.2rem;
+}
+.f-textarea{
+   height: 5rem;
+   width: 100%;
+   border:none;
+   resize:none;
+   padding: 0.3rem 0.4rem;
+   font-size: 0.28rem;
+   line-height: 0.48rem;
+}
+/* padding */
+.padding-all-3{
+    padding: .3rem;
+}
+.padding-h-3{
+    padding: .3rem 0;
+}
+.padding-w-3{
+    padding: 0 .3rem;
+}
+
+/* contact-way */
+.contact-way{
+    font-size: 0.28rem;
+    line-height: 0.3rem;
+    margin-left: 0.2rem;
+}
+.contact-item{
+    margin-top: 0.35rem;
+}
+
+
+/* tab */
+#navTab{
+   position: fixed;
+   width: 100%;
+   left: 0;
+   top: 0;
+   right: 0;
+   background: #b6a069;
+   z-index: 99;
+}
+#navTab + .navTab-top{
+   top: 0.8rem;
+   position: relative;
+}
+.tab-head{
+    display:-moz-box;  
+    display:-webkit-box;  
+    display:box;
+    display:-moz-flex;  
+    display:-webkit-flex;  
+    display:flex;   
+}
+.tab-head-default{
+    background: #b6a069;
+}
+.tab-body{
+
+}
+
+
+.tab-item{
+   -moz-box-flex:1;
+   -webkit-box-flex:1;
+   box-flex:1;
+   -webkit-flex:1 1 auto;
+   -moz-flex:1 1 auto;
+   flex:1 1 auto;
+   text-align: center;
+}
+.tab-item.active{
+   background: #a48c4e;
+   color: white;
+}
+.tab-item a:hover, .tab-item a:focus, .tab-item a:link, .tab-item a:visited {
+    text-decoration: none;
+    color: #dac99f;
+}
+.tab-item.active a:hover, .tab-item.active a:focus, .tab-item.active a:link, .tab-item.active a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.tab-item-default{
+    font-size: 0.28rem;
+   line-height: 0.48rem;
+   padding: 0.16rem 0;
+   color: #dac99f;
+}
+
+.tab-item1{
+   border:1px solid #2c2c2e;
+   font-size: 0.26rem;
+   line-height: 0.36rem;
+   padding: 0.13rem 0;
+   margin-right: 0.15rem;
+}
+
+.tab-item1:last-child{
+   margin-right: 0; 
+}
+.tab-item1.active{
+   background: #2c2c2e;
+   color: white;  
+}
+
+
+.tab-switch{
+
+}
+
+
+.weui-cell_access .weui-cell__ft{
+    font-size: .28rem;
+    line-height: 0.34rem;
+}
+.weui-cell_access .weui-cell__ft-none:after{
+    display: none;
+}
+.weui-picker-modal .picker-items{
+  font-size: .28rem;
+}
+.weui-picker-modal .picker-modal-inner{
+   height: 4rem;
+}
+.weui-picker-modal{
+  height: auto; 
+}
+
+.toolbar-title{
+  color: #bca66c;
+  font-size: .36rem;
+  line-height: .46rem;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  padding: .3rem 0;
+}
+.close-popup{
+ 
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  right: 0.3rem;
+  top: 0.3rem;
+  background: url(../images/icon/login_close.png) no-repeat left top;
+  background-size: cover;
+}
+.pqk-mask{
+  display: none;
+  background: rgba(0,0,0,0.7);
+}
+.pqk-mask,.pkq-popup-overlay{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  
+  z-index: 20;
+  
+}
+
+.pqk-mask-active .pkq-popup-modal{
+    background: white;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.pkq-popup-modal{
+    
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    border-radius: 0;
+    opacity: 0.6;
+    color: #3d4145;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    height: 7.3rem;
+    background: #EFEFF4;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.wallet-balance{
+  font-size: .3rem;
+  line-height: .4rem;
+}
+.wallet-balance li{
+  padding: .3rem;
+}
+.pkq-modal-content .wallet-submit{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding:.3rem; 
+}

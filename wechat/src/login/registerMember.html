@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+    
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.min.js" type="text/javascript"></script>
+
+    <script src="../libs/validate/jquery.validate.js" type="text/javascript"></script>
+    <script src="../libs/ajaxfileupload/ajaxfileupload.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/fastclick.js"></script>
+    
+    <script src="../js/app.js" type="text/javascript"></script>
+
+
+</head>
+<body class="lightyellow">
+   <!-- wrapper start -->
+   <div class="wrapper" id="registerUser">
+       <div class="tabs" id="navTab">
+           <ul class="clearfix tab-head shallowyellow t-center ">
+             <li class="tab-item tab-item-default active">
+                <a class="block" href="../login/registerMember.html">
+                   <span class="icon-agent-no"></span>
+                   <span>注册成为代理</span>
+                </a>
+             </li>
+             <li class="tab-item tab-item-default">
+                <a class="block" href="../login/registerUser.html">
+                   <span class="icon-member-no"></span>
+                   <span>注册成为会员</span>
+                </a>
+             </li>
+           </ul>
+       </div>
+       <div class="navTab-top tab-body">
+            <div class="tab-switch">
+                 <form action="" method="get" class="form" id="agent">
+                      <!-- name-area start -->
+                      <div class="margin-30 clearfix white name-area">
+                           <div class="left validates-relative upload-box">
+                               <label for="file" class="uploadHead">
+                                 <img src="../images/icon/login_setpic.png" class="uploadimg" alt="">
+                               </label>
+                               <input type="file" id="file" class="hide" name="file">
+                               <input type="text" id="src" class="alidates-input" name="src">
+                               <span class="icon icon-login_camera photo"></span>
+                           </div>
+                           <div class="right name-box">
+                               <div class="nickname b-bottom">
+                                    <input type="text" class="pkq-width nickname-input" name="nickname" value="" placeholder="设置您的昵称" />
+                               </div>
+                               <div class="realname">
+                                    <input type="text" class="pkq-width realname-input" name="realname" value="" placeholder="填写您的真实姓名" />
+                               </div>
+                           </div>
+                      </div> 
+                      <!-- name-area end -->
+                      <!-- margin-30 start -->
+                      <div class="padding-30 margin-30 white">
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-3 left">手机号码</div>
+                               <div class="col-7 left">
+                                   <input type="text" class="pkq-width t-right" name="phone" value="" placeholder="请输入" />
+                               </div>
+                          </div>
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-3 left">手机验证码</div>
+                               <div class="col-40 left">
+                                   <input type="text" class="pkq-width" name="code" value="" placeholder="请输入" />
+                               </div>
+                               <div class="col-3 left">
+                                   <button type="button" id="getCode" class="pkq-width shallowyellow t-center">获取验证码</button>
+                               </div>
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-3 left">密码</div>
+                               <div class="col-7 left">
+                                   <input type="text" class="pkq-width t-right" name="" value="" placeholder="请设置您的密码" />
+                               </div>
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-3 left">确认密码</div>
+                               <div class="col-7 left">
+                                   <input type="text" class="pkq-width t-right" name="" value="" placeholder="请再次输入密码" />
+                               </div>
+                          </div>                   
+                      </div>
+                      <!-- margin-30 end -->
+                      <!-- margin-30 start -->
+                      <div class="padding-30 margin-30 white">
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-3 left">身份证号码</div>
+                               <div class="col-7 left t-right">
+                                    <input type="text" class="pkq-width t-right" name="idcard" value="" placeholder="您的身份证号码" />
+                               </div>
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-3 left">开户名</div>
+                               <div class="col-7 left">
+                                   <input type="text" class="pkq-width t-right" name="account-name" value="" placeholder="银行开户名" />
+                               </div>
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-40 left">开户支行</div>
+                               <div class="col-6 left">
+                                   <input type="text" class="pkq-width t-right" name="opening-branch" value="" placeholder="请输入开户支行" />
+                               </div>
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-40 left">银行帐号</div>
+                               <div class="col-6 left">
+                                   <input type="text" class="pkq-width t-right" name="opening-number" value="" placeholder="请输入开户银行帐号" />
+                               </div>
+                          </div>
+
+                      </div>
+                      <!-- margin-30 end -->
+
+                      <!-- margin-30 start -->
+                      <div class="padding-30 margin-30 white">
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-3 left">邮寄地址</div>
+                               <div class="col-7 left clearfix">
+                                    <div class="col-5 left validates-relative">
+                                       <input type="text" class="pkq-width t-right " name="" readonly="readonly" placeholder="请选择" id="province">
+                                       <input type="text" class="validates-input" name="" readonly="readonly" id="provinceSelect">
+                                    </div>
+                                    <div class="col-5 left validates-relative">
+                                       <input type="text" class="pkq-width t-right " name="" readonly="readonly" placeholder="请选择" id="city">
+                                       <input type="text" class="validates-input" name="" readonly="readonly" id="citySelect">
+                                    </div>
+                               </div>
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <input type="text" class="pkq-width" name="address" value="" placeholder="填写您的店铺具体地址" />
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-40 left">收件人</div>
+                               <div class="col-6 left">
+                                   <input type="text" class="pkq-width t-right" name="addressee" value="" placeholder="填写收件人姓名" />
+                               </div>
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-40 left">收件人手机</div>
+                               <div class="col-6 left">
+                                   <input type="text" class="pkq-width t-right" name="Addressee-phone" value="" placeholder="收件人联系电话" />
+                               </div>
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-40 left">推荐人ID</div>
+                               <div class="col-6 left">
+                                   <input type="text" class="pkq-width t-right" name="" value="" placeholder="代理推荐人ID（选填）" />
+                               </div>
+                          </div>
+
+                          <div class="clearfix f-rows b-bottom">
+                               <div class="col-40 left">推荐码</div>
+                               <div class="col-6 left">
+                                   <input type="text" class="pkq-width t-right" name="" value="" placeholder="代理推荐推荐码（选填）" />
+                               </div>
+                          </div>
+
+                      </div>
+                      <!-- margin-30 end -->
+                      <div class="padding-30 register-submit-box">
+                          <input type="submit" class="lightblack register-submit" value="确认" name="">
+                      </div>
+
+                      <div class="padding-30 agreement">
+                          <label class="radio-box" for="no">
+                             <input type="radio" name="agreement" id="no">
+                             <span class="radio v-middle"></span><span class="v-middle">阅读并同意《云蚨用户注册协议》</span>
+                          </label>
+                      </div>
+                  </form>
+            </div>
+            
+       </div>
+   </div>
+
+   <!-- wrapper end -->
+   <script type="text/javascript">
+     $(function(){
+        app.getCode({
+          getBtn:'getCode'
+        })
+        //校验
+        app.validates({
+              "form":$('#agent'),      //form表单
+              "rules":{        //rules校验规则
+                  'src': {
+                      required: true,
+                      //minlength: 5
+                  },
+                  'nickname': {
+                      required: true,
+                      //minlength: 5
+                  },
+                  'realname': {
+                      required: true
+                  },
+                  'phone': {
+                      required: true
+                  },
+                  'account-name': {
+                      required: true
+                  },
+                  'opening-branch': {
+                      required: true
+                  },
+                  'opening-number': {
+                      required: true
+                  },
+                  'mailing-address': {
+                      required: true
+                  },
+                  'address': {
+                      required: true
+                  },
+                  'addressee': {
+                      required: true
+                  },
+                  'Addressee-phone': {
+                      required: true
+                  },
+                  'agreement': {
+                      required: true
+                  },
+              },       
+              "messages":{     //提示信息
+                  
+                  'src': {
+                      required: '请上传头像',
+                      //minlength: 5
+                  },
+                  'nickname': {
+                      required: '请输入用户名',
+                      //minlength: 5
+                  },
+                  'realname': {
+                      required: '请输入真实姓名'
+                  },
+                  'phone': {
+                      required: '请输入手机号码'
+                  },
+                  'account-name': {
+                      required: '请输入开户名'
+                  },
+                  'opening-branch': {
+                      required: '请输入开户支行'
+                  },
+                  'opening-number': {
+                      required: '请输入银行帐号'
+                  },
+                  'mailing-address': {
+                      required: '请输入邮寄地址'
+                  },
+                  'address': {
+                      required: '填写您的店铺具体地址'
+                  },
+                  'addressee': {
+                      required: '收件人'
+                  },
+                  'Addressee-phone': {
+                      required: '收件人手机'
+                  },
+                  'agreement': {
+                      required: '请勾选协议'
+                  },
+                  
+              },
+              "showErrors":'top'
+        });
+        //头像上传
+        $('#file').on('change',function(){
+           app.upload({
+            url:'',　　　　　　　　　                          
+            fileInput:'file',　　　　　                             
+            srcInput:'src',  
+          }) 
+        });
+
+        //地址选择
+        app.level([
+           {
+             displayValue:'province',
+             hiddenValue:'provinceSelect',
+           },
+           {
+             displayValue:'city',
+             hiddenValue:'citySelect',
+           }
+
+        ]);
+        
+     });
+   </script>
+</body>
+</html>

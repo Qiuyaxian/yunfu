@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>油卡</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    <script src="../../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+    <script src="../../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../../js/app.js" type="text/javascript"></script>
+</head>
+<body class="bg-f0f0f0">
+<header class="header-inner">
+    <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+    <span>油卡</span>
+</header>
+<section class="container mt-header mb-oil-footer">
+    <div class="swiper-container" id="oil-swipe">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../images/banner-card.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/banner-card.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/banner-card.png">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+    </div>
+    <div class="oil-card-wrap">
+        <div class="oil-title">油卡套餐</div>
+
+        <div class="oil-tab-header clearfix">
+            <div class="oil-tab active" data-href="#oil-tab-1">大众经济版</div>
+            <div class="oil-tab" data-href="#oil-tab-2">时尚体验版</div>
+            <div class="oil-tab" data-href="#oil-tab-3">华丽升级版</div>
+        </div>
+        <div class="oil-tab-content">
+            <div id="oil-tab-1" class="oil-tab-item">
+                <div class="oil-tab-cnt">
+                    <table class="oil-set-table">
+                        <thead>
+                        <tr>
+                            <td>序号</td>
+                            <td>享返现金</td>
+                            <td>每月充值</td>
+                            <td>100%到帐</td>
+                            <td>赠送积分</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1.1</td>
+                            <td>2000</td>
+                            <td>500</td>
+                            <td><img src="../images/yk_click.png"></td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>1.2</td>
+                            <td>3500</td>
+                            <td>1000</td>
+                            <td><img src="../images/yk_click.png"></td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>1.3</td>
+                            <td>3500xN</td>
+                            <td>1000xN</td>
+                            <td><img src="../images/yk_click.png"></td>
+                            <td>1000xN</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="oil-note">备注：套餐以此类推，以3500xN的倍数叠加</div>
+                </div>
+
+                <div class="oil-set-detail">
+                    <div class="set-detail-header clearfix">
+                        <div class="set-detail-tab set-detail-tab1 active" data-href="#set-detail-1">套餐详情</div>
+                        <div class="set-detail-tab set-detail-tab1" data-href="#set-detail-2">所有评论（10）</div>
+                    </div>
+                    <div class="set-detail-content">
+                        <div id="set-detail-1" class="set-detail-item set-detail-item1">
+                            <img src="../images/oil-card.jpg">
+                        </div>
+                        <div id="set-detail-2" class="set-detail-item set-detail-item1 hide">
+                            <ul>
+                                <li class="comment-list clearfix">
+                                    <div class="left"><img src="../images/comment-icon.jpg"></div>
+                                    <div class="right">
+                                        <div class="comment-name">李钟硕</div>
+                                        <div class="comment-time">2017-02-01</div>
+                                        <div>很不错的油卡，优惠多多，刚好买的时候赶上优惠活动了。</div>
+                                    </div>
+                                </li>
+                                <li class="comment-list clearfix">
+                                    <div class="left"><img src="../images/comment-icon.jpg"></div>
+                                    <div class="right">
+                                        <div class="comment-name">李钟硕</div>
+                                        <div class="comment-time">2017-02-01</div>
+                                        <div>很不错的油卡，优惠多多，刚好买的时候赶上优惠活动了。</div>
+                                    </div>
+                                </li>
+                                <li class="comment-list clearfix">
+                                    <div class="left"><img src="../images/comment-icon.jpg"></div>
+                                    <div class="right">
+                                        <div class="comment-name">李钟硕</div>
+                                        <div class="comment-time">2017-02-01</div>
+                                        <div>很不错的油卡，优惠多多，刚好买的时候赶上优惠活动了。</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="oil-tab-2" class="oil-tab-item hide">
+                <div class="oil-tab-cnt">
+                    <table class="oil-set-table">
+                        <thead>
+                        <tr>
+                            <td>序号</td>
+                            <td>开卡缴费</td>
+                            <td>一次性到账油费</td>
+                            <td>赠送积分</td>
+                            <td>加油卡类型</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5000</td>
+                            <td>4500</td>
+                            <td>5000(100%)</td>
+                            <td>全国中石化／中石油</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>5000</td>
+                            <td>5000</td>
+                            <td>1500(30%)</td>
+                            <td>全国中石化／中石油</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>400(40%)</td>
+                            <td>中石油柴油汽油通用<br>（使用地区：广东 上海 福建 湖南 武汉）</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="oil-note">备注：用于汽油／柴油</div>
+                </div>
+                <div class="oil-set-detail">
+                    <div class="set-detail-header clearfix">
+                        <div class="set-detail-tab set-detail-tab2 active" data-href="#set-detail-3">套餐详情</div>
+                        <div class="set-detail-tab set-detail-tab2" data-href="#set-detail-4">所有评论（10）</div>
+                    </div>
+                    <div class="set-detail-content">
+                        <div id="set-detail-3" class="set-detail-item set-detail-item2">
+                            <img src="../images/oil-card.jpg">
+                        </div>
+                        <div id="set-detail-4" class="set-detail-item set-detail-item2 hide">
+                            <ul>
+                                <li class="comment-list clearfix">
+                                    <div class="left"><img src="../images/comment-icon.jpg"></div>
+                                    <div class="right">
+                                        <div class="comment-name">李钟硕2</div>
+                                        <div class="comment-time">2017-02-01</div>
+                                        <div>很不错的油卡，优惠多多，刚好买的时候赶上优惠活动了。</div>
+                                    </div>
+                                </li>
+                                <li class="comment-list clearfix">
+                                    <div class="left"><img src="../images/comment-icon.jpg"></div>
+                                    <div class="right">
+                                        <div class="comment-name">李钟硕</div>
+                                        <div class="comment-time">2017-02-01</div>
+                                        <div>很不错的油卡，优惠多多，刚好买的时候赶上优惠活动了。</div>
+                                    </div>
+                                </li>
+                                <li class="comment-list clearfix">
+                                    <div class="left"><img src="../images/comment-icon.jpg"></div>
+                                    <div class="right">
+                                        <div class="comment-name">李钟硕</div>
+                                        <div class="comment-time">2017-02-01</div>
+                                        <div>很不错的油卡，优惠多多，刚好买的时候赶上优惠活动了。</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="oil-tab-3" class="oil-tab-item hide">
+                <div class="oil-tab-cnt">
+                    <table class="oil-set-table">
+                        <thead>
+                        <tr>
+                            <td>序号</td>
+                            <td>缴费</td>
+                            <td>促销期间<br>赠送油费</td>
+                            <td>可用油费<br>总额</td>
+                            <td>首页充值<br>到帐用油</td>
+                            <td>以后每月充值<br>到帐用油</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>7000</td>
+                            <td>1000</td>
+                            <td>8000</td>
+                            <td>500</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>9000</td>
+                            <td>2500</td>
+                            <td>11500</td>
+                            <td>500</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>11000</td>
+                            <td>4000</td>
+                            <td>15000</td>
+                            <td>500</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>14000</td>
+                            <td>2000</td>
+                            <td>16000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>18000</td>
+                            <td>5000</td>
+                            <td>23000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>22000</td>
+                            <td>8000</td>
+                            <td>30000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>60000</td>
+                            <td>24000</td>
+                            <td>84000</td>
+                            <td>3000</td>
+                            <td>3000</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>100000</td>
+                            <td>50000</td>
+                            <td>150000</td>
+                            <td>5000</td>
+                            <td>5000</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="oil-note">备注：赠送白积分</div>
+                </div>
+                <div class="oil-set-detail">
+                    <div class="set-detail-header clearfix">
+                        <div class="set-detail-tab set-detail-tab3 active" data-href="#set-detail-5">套餐详情</div>
+                        <div class="set-detail-tab set-detail-tab3" data-href="#set-detail-6">所有评论（10）</div>
+                    </div>
+                    <div class="set-detail-content">
+                        <div id="set-detail-5" class="set-detail-item set-detail-item3">
+                            <img src="../images/oil-card.jpg">
+                        </div>
+                        <div id="set-detail-6" class="set-detail-item set-detail-item3 hide">
+                            <ul>
+                                <li class="comment-list clearfix">
+                                    <div class="left"><img src="../images/comment-icon.jpg"></div>
+                                    <div class="right">
+                                        <div class="comment-name">李钟硕3</div>
+                                        <div class="comment-time">2017-02-01</div>
+                                        <div>很不错的油卡，优惠多多，刚好买的时候赶上优惠活动了。</div>
+                                    </div>
+                                </li>
+                                <li class="comment-list clearfix">
+                                    <div class="left"><img src="../images/comment-icon.jpg"></div>
+                                    <div class="right">
+                                        <div class="comment-name">李钟硕</div>
+                                        <div class="comment-time">2017-02-01</div>
+                                        <div>很不错的油卡，优惠多多，刚好买的时候赶上优惠活动了。</div>
+                                    </div>
+                                </li>
+                                <li class="comment-list clearfix">
+                                    <div class="left"><img src="../images/comment-icon.jpg"></div>
+                                    <div class="right">
+                                        <div class="comment-name">李钟硕</div>
+                                        <div class="comment-time">2017-02-01</div>
+                                        <div>很不错的油卡，优惠多多，刚好买的时候赶上优惠活动了。</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--选择弹窗 begin-->
+<div class="product-detail-layer" id="chosen-layer">
+    <div class="mask"></div>
+    <div class="product-detail-layer-container">
+        <div class="product-layer-contain-chosen">
+            <div class="product-norms">品牌：</div>
+            <div class="layer-chosen-div clearfix" id="chosen-attr-0">
+                <div class="">中石油</div>
+                <div>中石化</div>
+            </div>
+            <div class="product-norms">油品：</div>
+            <div class="layer-chosen-div clearfix" id="chosen-attr-1">
+                <div class="">汽油</div>
+                <div>柴油</div>
+            </div>
+            <div class="product-norms">地区：</div>
+            <div class="layer-chosen-div clearfix" id="chosen-attr-2">
+                <div class="">全国</div>
+                <div>广州</div>
+                <div>深圳</div>
+            </div>
+            <div class="product-norms">卡种：</div>
+            <div class="layer-chosen-div clearfix" id="chosen-attr-3">
+                <div class="">中石油卡</div>
+                <div>中石化卡</div>
+                <div>中经汇通</div>
+            </div>
+            <div class="product-norms">油卡套餐：</div>
+            <div class="layer-chosen-div clearfix" id="chosen-attr-4">
+                <div class="">大众经济版</div>
+                <div>时尚体验版</div>
+                <div>华丽升级版</div>
+            </div>
+            <div class="product-norms">套餐序号：</div>
+            <div class="layer-chosen-list clearfix" id="chosen-attr-5">
+                <div class="">序号1</div>
+                <div>序号2</div>
+                <div>序号3</div>
+            </div>
+            <div class="product-norms">数量：</div>
+            <div class="choose-buy-num clearfix">
+                <div class="reduce-num"><img src="../images/shop_down.png"></div>
+                <label><input type="number" value="1" class="buy-num" readonly></label>
+
+                <div class="add-num"><img src="../images/shop_add.png"></div>
+            </div>
+            <div class="choose-money">需缴费：<span>￥5000</span></div>
+        </div>
+        <div class="choose-btn">
+            <a href="javascript:void(0)" class="chosen-cancel">取消</a>
+            <a href="javascript:void(0)" class="chosen-submit">购买</a>
+        </div>
+    </div>
+</div>
+<!--选择弹窗 end-->
+<!-- footer begin -->
+<footer class="oil-card-footer clearfix">
+    <a href="javascript:void(0)" class="footer-service left">
+        <img src="../images/home_service_in.png" alt="联系客服">
+        <div>联系客服</div>
+    </a>
+    <div class="footer-collect left" id="like" data-id="1">
+        <img src="../images/home_collect_no.png" alt="关注">
+        <div>关注</div>
+    </div>
+    <div class="oil-buy-btn left" id="oil-add-cart">加入购物车</div>
+    <div class="oil-buy-btn left" id="oil-buy-now">立即购买</div>
+</footer>
+<!-- footer end -->
+<script type="text/javascript">
+    $(function () {
+        /**
+         * 轮播图
+         **/
+        var swiper = new Swiper('#oil-swipe', {
+            pagination: '.swiper-pagination',
+            autoplay: 3000,
+            autoplayDisableOnInteraction : false,
+            loop : true,
+            paginationClickable: true
+        });
+
+        //tab切换
+        app.tab({
+            'click':'oil-tab',
+            'active':'active',
+            'switchTab':'oil-tab-item'
+        });
+
+        app.tab({
+            'click':'set-detail-tab1',
+            'active':'active',
+            'switchTab':'set-detail-item1'
+        });
+
+        app.tab({
+            'click':'set-detail-tab2',
+            'active':'active',
+            'switchTab':'set-detail-item2'
+        });
+
+        app.tab({
+            'click':'set-detail-tab3',
+            'active':'active',
+            'switchTab':'set-detail-item3'
+        });
+
+        //关注样式
+        $('#like').on('click',function(){
+            if($(this).attr('data-id') == '0'){   //当收藏data-id= '0'时
+                $(this).attr('data-id','1');
+                $(this).find('img').attr('src','../images/home_collect_no.png');    //改为不收藏的样式
+            }else if($(this).attr('data-id') == '1'){     //当不收藏data-id= '1'时
+                $(this).attr('data-id','0');
+                $(this).find('img').attr('src','../images/home_collect_in.png');     //改为收藏的样式
+            }
+        });
+
+        //加入购物车选择规格
+        $('#oil-add-cart,#oil-buy-now').on('click',function(){
+            $('#chosen-layer').show();
+        });
+        $('.chosen-cancel').on('click',function(){
+            $('#chosen-layer').hide();
+            //关闭去除已选择属性
+            $('.layer-chosen-div,.layer-chosen-list').find('div').removeClass('active');
+            $('.choose-buy-num').find('.buy-num').val('1');
+        });
+
+        /**
+         * 选择规格
+         **/
+        $("div[id^='chosen-attr-']").each(function(i,ele){
+            $("#chosen-attr-" + i).find('div').each(function(index,element){
+                $(this).click(function(){
+                    $("#chosen-attr-"+ i).find('div').removeClass("active");
+                    $(this).addClass("active");
+                });
+            });
+        });
+        /*$("#chosen-attr-1 div").each(function(){
+            $(this).click(function(){
+                $("#chosen-attr-1 div").removeClass("active");
+                $(this).addClass("active");
+            });
+        });*/
+
+        /**
+         * 数量加减
+         **/
+        var lastChosenNum = 0;
+        $('.reduce-num').click(function(){
+            var buyNum = $(this).parent().find('.buy-num').val();
+            if(buyNum == "1"){
+                return false;
+            }else{
+                buyNum--;
+                $(this).parent().find('.buy-num').val(buyNum);
+                lastChosenNum =  buyNum;
+            }
+        });
+        $('.add-num').click(function(){
+            var buyNum = $(this).parent().find('.buy-num').val();
+            /** 假设库存值为999 **/
+            var inventory = 999;
+            if(buyNum < inventory){
+                buyNum++;
+                $(this).parent().find('.buy-num').val(buyNum);
+                lastChosenNum = buyNum;
+            }else{
+                return false;
+            }
+        });
+    });
+</script>
+</body>
+</html>

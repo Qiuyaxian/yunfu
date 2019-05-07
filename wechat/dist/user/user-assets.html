@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>资产中心</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../libs/weui/css/jquery-weui.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="../libs/weui/js/jquery-weui.min.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+    <script src="../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+</head>
+
+<body class="lightyellow">
+  <header class="header-inner">
+    <a href="javascript:void(0)" class="go-back"><img src="../images/arrow-left.png"></a>
+      <span class="title">资产中心</span>
+  </header>
+
+  <section class="mt-header" id="assets-center">
+
+     <div class="" id="">
+          <ul class="tab-head tab-head-default">
+            <li class="tab-item tab-item-default active">
+                <a href="../user/user-assets.html" class="block">积分</a>
+            </li>
+            <li class="tab-item tab-item-default">
+                <a href="../user/user-assets-wallet.html" class="block">钱包</a>
+            </li>
+            <li class="tab-item tab-item-default">
+                <a href="../user/user-assets-reward.html" class="block">奖励</a>
+            </li>
+            <li class="tab-item tab-item-default">
+                <a href="../user/user-assets-oil.html" class="block">油卡</a>
+            </li>
+            <li class="tab-item tab-item-default">
+                <a href="../user/user-assets-protocol.html" class="block">协议</a>
+            </li>
+          </ul>
+     </div>
+     <div class="navTab-top" id="">
+          <!-- score start -->
+          <div class="assets-banner">
+               <!-- 遮罩 -->
+               <div class="assets-mask">
+                 
+               </div>
+               <div class="assets-score">
+                    <div class="assets-text">拥有云联惠积分</div>
+                    <div class="assets-number">20000</div>
+               </div>
+               <img src="../images/assets-banner.png" class="assets-bg" alt="">
+          </div>
+
+          <div class="tab-head" id="assets-score-tab">
+              <div class="tab-item tab-item-default score-tab active" data-href="#allscore">
+                   全部
+              </div>
+              <div class="tab-item tab-item-default score-tab" data-href="#inscore">
+                   收入积分
+              </div>
+              <div class="tab-item tab-item-default score-tab" data-href="#outscore">
+                   支出积分
+              </div>
+          </div>
+          <div class="tab-body white">
+              <div class="tab-switch" id="allscore">
+                    <div class="assets-table-head padding-30">
+                         <span class="assets-table-type">来源/用途</span>
+                         <span class="assets-table-number">积分变化</span>
+                         <span class="assets-table-time">日期</span>
+                    </div>
+                    <ul class="assets-table-body padding-30">
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number add">+5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number">+5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number reduse">-5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number reduse">-5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                    </ul>
+              </div>
+
+              <div class="tab-switch hide" id="inscore">
+                   <div class="assets-table-head padding-30">
+                         <span class="assets-table-type">来源/用途</span>
+                         <span class="assets-table-number">积分变化</span>
+                         <span class="assets-table-time">日期</span>
+                    </div>
+                    <ul class="assets-table-body padding-30">
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number add">+5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number">+5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number reduse">-5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number reduse">-5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                    </ul>
+              </div>
+              
+              <div class="tab-switch hide" id="outscore">
+                   <div class="assets-table-head padding-30">
+                         <span class="assets-table-type">来源/用途</span>
+                         <span class="assets-table-number">积分变化</span>
+                         <span class="assets-table-time">日期</span>
+                    </div>
+                    <ul class="assets-table-body padding-30">
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number add">+5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number">+5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number reduse">-5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                       <li class="assets-table-item">
+                         <span class="assets-table-type">购买体验型油卡一张</span>
+                         <span class="assets-table-number reduse">-5</span>
+                         <span class="assets-table-time">2017-02-01</span>
+                       </li>
+                    </ul>
+              </div>
+              
+          </div>
+          <!-- score end -->
+          
+     </div>
+
+  </section>
+  
+  <script type="text/javascript">
+      $(function () {
+           app.tab({
+              'click':'score-tab',    
+              'active':'active',
+              'switchTab':'tab-switch',
+           });
+      });
+  </script>
+</body>
+</html>

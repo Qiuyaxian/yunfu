@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    <script src="../../libs/weui/js/jquery-2.1.4.js" type="text/javascript"></script>
+    <!--swiper-->
+    <link rel="stylesheet" type="text/css" href="../../libs/swiper/css/swiper.min.css">
+    <script src="../../libs/swiper/js/swiper.min.js" type="text/javascript"></script>
+    <script src="../../js/app.js" type="text/javascript"></script>
+</head>
+<body class="bg-f0f0f0">
+<header class="header">
+    <img src="../images/logo.png" class="logo">
+</header>
+<section class="container mt-header mb-cart pt-1px pb-1px">
+    <div class="shop-product clearfix">
+        <div class="cart-select left">
+            <label for="check-1"><img src="../images/shopcart_no.png" alt="未选中"></label>
+            <input type="checkbox" name="shopping-checkbox" class="shopping-checkbox cart-checkbox" id="check-1">
+        </div>
+        <div class="left product-pic"><img src="../images/oil-card.jpg"></div>
+        <div class="left product-info">
+            <div class="goods-name">时尚体验版油卡-全国中石化、中石油（赠送5000积分）</div>
+            <div class="cart-edit-num hide clearfix" style="display: block;">
+                <div class="reduce-num left"><img src="../images/shopcart_down.png"></div>
+                <!-- input的属性data-inventory的值表示库存量-->
+                <label class="buy-num-label left"><input type="number" value="1" data-inventory="10" class="buy-num" readonly></label>
+                <a href="javascript:void(0)" class="add-num left"><img src="../images/shopcart_add.png"></a>
+            </div>
+            <div class="product-price">售价：￥5000</div>
+            <div class="product-collect like" data-id="1">
+                <img src="../images/shopcart_collect.png" alt="关注">
+            </div>
+            <div class="cart-delete left">
+                <img src="../images/shopcart_delete.png" alt="删除">
+            </div>
+        </div>
+    </div>
+    <div class="shop-product clearfix">
+        <div class="cart-select left">
+            <label for="check-2"><img src="../images/shopcart_no.png" alt="未选中"></label>
+            <input type="checkbox" name="shopping-checkbox" class="shopping-checkbox cart-checkbox" id="check-2">
+        </div>
+        <div class="left product-pic"><img src="../images/oil-card.jpg"></div>
+        <div class="left product-info">
+            <div class="goods-name">时尚体验版油卡-全国中石化、中石油（赠送5000积分）</div>
+            <div class="cart-edit-num hide clearfix" style="display: block;">
+                <div class="reduce-num left"><img src="../images/shopcart_down.png"></div>
+                <!-- input的属性data-inventory的值表示库存量-->
+                <label class="buy-num-label left"><input type="number" value="1" data-inventory="10" class="buy-num" readonly></label>
+                <a href="javascript:void(0)" class="add-num left"><img src="../images/shopcart_add.png"></a>
+            </div>
+            <div class="product-price">售价：￥5000</div>
+            <div class="product-collect like" data-id="1">
+                <img src="../images/shopcart_collect.png" alt="关注">
+            </div>
+            <div class="cart-delete left">
+                <img src="../images/shopcart_delete.png" alt="删除">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="cart-footer">
+    <div class="all-check-wrap left">
+        <label for="all-check" class="all-check"><img src="../images/shopcart_all_no.png" alt="未全选"></label>
+        <input type="checkbox" name="shopping-checkbox" id="all-check" class="shopping-checkbox hide">
+        <label for="all-check" class="color-999">全选</label>
+    </div>
+    <a href="javascript:void(0)" class="all-btn right">去结算</a>
+    <div class="all-price right">
+        <div class="color-deep-green">合计：<span class="total">￥<span id="total-price">5000</span></span></div>
+        <div class="tip">不含运费</div>
+    </div>
+</div>
+<!-- footer begin -->
+<footer class="footer">
+    <ul>
+        <li class="active">
+            <a href="../index/index.html">
+                <div class="footer-icon"><img src="../images/home_home_in.png"></div>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="../shopCart/shopping-cart.html">
+                <div class="footer-icon"><img src="../images/home_cart_no.png"></div>
+                <span>购物车</span>
+            </a>
+        </li>
+        <li>
+            <a href="../service/server-index.html">
+                <div class="footer-icon"><img src="../images/home_service_no.png"></div>
+                <span>客服</span>
+            </a>
+        </li>
+        <li>
+            <a href="../user/user-index.html">
+                <div class="footer-icon"><img src="../images/home_mine_no.png"></div>
+                <span>我的</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+<!-- footer end -->
+<script type="text/javascript">
+    $(function () {
+        //删除商品
+        $('.cart-delete').on('click',function(){
+            var that = $(this);
+            var r=confirm('是否删除该商品？');
+            if (r==true)
+            {
+                that.parent().parent().remove();
+            }
+            else
+            {
+                return;
+            }
+        });
+
+        //关注样式
+        $('.like').on('click',function(){
+            if($(this).attr('data-id') == '0'){   //当收藏data-id= '0'时
+                $(this).attr('data-id','1');
+                $(this).find('img').attr('src','../images/shopcart_collect.png');    //改为不收藏的样式
+            }else if($(this).attr('data-id') == '1'){     //当不收藏data-id= '1'时
+                $(this).attr('data-id','0');
+                $(this).find('img').attr('src','../images/home_collect_in.png');     //改为收藏的样式
+            }
+        });
+
+        /**
+         * 数量加减
+         **/
+        var lastChosenNum = 0;
+        $('.reduce-num').click(function(){
+            var buyNum = $(this).parent().find('.buy-num').val();
+            if(buyNum == "0"){
+                return false;
+            }else{
+                buyNum--;
+                $(this).parent().find('.buy-num').val(buyNum);
+                $(this).parent().parent().find('.count').text(buyNum);
+                lastChosenNum =  buyNum;
+            }
+        });
+        $('.add-num').click(function(){
+            var buyNum = $(this).parent().find('.buy-num').val();
+            var inventory = Number($(this).parent().find('.buy-num').attr('data-inventory'));//库存值
+            if(buyNum < inventory){
+                buyNum++;
+                $(this).parent().find('.buy-num').val(buyNum);
+                $(this).parent().parent().find('.count').text(buyNum);
+                lastChosenNum = buyNum;
+            }else{
+                return false;
+            }
+        });
+
+        /**
+         * 购物车的选择
+         * **/
+        $('input.shopping-checkbox').on('click', function (event) {
+            var flag = true;
+            var len = $('input.shopping-checkbox').length;
+            var checkall = $('input.shopping-checkbox')[len - 1];
+            var that = $(this)[0];
+            if (that == checkall) {
+                flag = that.checked;
+                $('input.shopping-checkbox').each(function (index, el) {
+                    $(this)[0].checked = flag;
+                });
+            } else {
+                $('input.shopping-checkbox').each(function (index, el) {
+                    if ($(this)[0] != checkall) flag = ($(this)[0].checked == false) ? false : flag;
+                });
+                checkall.checked = flag;
+            }
+            if(flag == true){
+                $('.all-check').find("img").attr('src','../images/shopcart_all_in.png');
+            }else{
+                $('.all-check').find("img").attr('src','../images/shopcart_all_no.png');
+            }
+            $("input.shopping-checkbox").each(function () {
+                if ($(this).is(":checked") == true) {
+                    $(this).parent(".cart-select").find("img").attr('src','../images/shopcart_in.png');
+                } else {
+                    $(this).parent(".cart-select").find("img").attr('src','../images/shopcart_no.png');
+                }
+            });
+        });
+
+        //字数限制
+        $(".goods-name").fonts({
+            fontNum: 38
+        });
+    });
+    (function($) {
+        $.fn.fonts = function(option){
+            option = $.extend({},$.fn.fonts.option,option);
+            return this.each(function(){
+                var objString = $(this).text(),
+                    objLength = $(this).text().length,
+                    num = option.fontNum;
+                if(objLength > num){
+                    objString = $(this).text(objString.substring(0,num) + "···");
+                }
+            })
+        };
+        // default options
+        $.fn.fonts.option = {
+            fontNum:100 //font num
+        };
+
+    })(jQuery);
+</script>
+</body>
+</html>

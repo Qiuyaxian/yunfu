@@ -1,0 +1,641 @@
+a:focus {
+    outline: none;
+}
+button{
+  width: 100%;
+  border:none;
+  height: 100%;
+  font-size: .24rem;
+  color: white;
+}
+/* flex */
+.pkq-flex{
+    display:-moz-box;  
+    display:-webkit-box;  
+    display:box;
+    display:-moz-flex;  
+    display:-webkit-flex;  
+    display:flex;
+    -webkit-box-orient: horizontal;
+    flex-direction:column;
+    
+}
+.pkq-shrink{
+  flex-shrink: 0
+}
+/*行内flex元素*/
+.inline-flex{
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+/*居中 flex水平排列时垂直居中;垂直排列水平居中*/
+.pkq-items-c{
+  align-items: center;
+}
+.pkq-items-s{
+   align-items: flex-start;
+}
+.pkq-items-e{
+   align-items: flex-end;
+}
+/*flex容器内的项目居中*/
+.pkq-item-c{
+  align-self:center;
+}
+.pkq-item-s{
+  align-self:flex-start;
+}
+.pkq-item-e{
+  align-self:flex-end;
+}
+
+/*居中 flex水平排列时水平居中;垂直排列垂直居中*/
+.pkq-justify-c{
+  justify-content: center;
+}
+.pkq-justify-s{
+  justify-content: flex-start;
+}
+.pkq-justify-e{
+  justify-content: flex-end;
+}
+
+/*两边对齐排列*/
+.pkq-justify-b{
+  justify-content: space-between;
+}
+.pkq-flex-auto{
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+/* 自动换行 */
+.pkq-flex-wrap{
+  flex-wrap:wrap;
+}
+
+
+
+/* base */
+.inline-block{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+.pkq-width{
+    width: 100%;
+}
+.pkq-height{
+    height: 100%;
+}
+.pkq-width1{
+    width: 1rem;
+}
+.pkq-width-hide{
+    width: 1px;
+    height: 1px;
+}
+
+
+/*  background  */
+.gray{
+   background: #2c2c2e;
+}
+.white{
+    background: white;
+}
+
+.lighgray{
+    background: #444444;
+}
+.bg-none{
+    background: none;
+}
+.lighyellow{
+    background: #bda66c;
+}
+.shallowyellow{
+    background: #b6a069; 
+}
+.deepyellow{
+    background: #a48c4e;
+}
+.lightyellow{
+    background: #f0f0f0;
+}
+
+.lightblack{
+   background: #2c2c2e;
+}
+/* form */
+.f-label{
+   -moz-box-flex:1;
+   -webkit-box-flex:1;
+   box-flex:1;
+   -webkit-flex:1 1 auto;
+   -moz-flex:1 1 auto;
+   flex:1 1 auto;
+}
+.f-control{
+
+}
+.f-input{
+   width: 100%;
+}
+.f-border-bottom{
+
+}
+.f-border-top{
+
+}
+.f-border{
+   
+}
+.f-rows{
+   display:-moz-box;  
+   display:-webkit-box;  
+   display:box;
+   display:-moz-flex;  
+   display:-webkit-flex;  
+   display:flex;   
+}
+
+/* position */
+.fixed{
+   position: fixed;
+}
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+
+
+/* margin */
+.margin-29{
+   
+}
+.margin-top-30{
+    margin-top: .3rem;
+}
+.margin-top-20{
+    margin-top: .2rem;
+}
+.margin-bottom-30{
+    margin-bottom: .3rem;
+}
+.margin-30{
+    margin: .3rem 0;
+}
+/* padding */
+.padding-29{
+   padding: 0 0.29rem;
+}
+.padding-30{
+    padding: 0 0.3rem;
+}
+.padding-34{
+    padding: .34rem 0;
+}
+.padding-h-30{
+  padding: 0.3rem 0;
+}
+.padding-top-3{
+  padding-top: .3rem;
+}
+
+.padding-bottom-3{
+  padding-bottom: .3rem;
+}
+
+.padding-top-2{
+  padding-top: .2rem;
+}
+/* font */
+.font0{
+    font-size: 0;
+}
+.font28{
+    font-size: .28rem;
+    line-height: .3rem;
+}
+
+
+/* text */
+.t-center{
+   text-align: center;
+}
+.t-left{
+   text-align: left;
+}
+.t-right{
+   text-align: right;
+}
+
+/* color */
+.c-yellow{
+    color: #e5d09c;
+}
+.c-white{
+    color: white;
+}
+.c-gray{
+  color: #999999;
+}
+.c-lightyellow{
+  color: #b6a069;
+}
+.c-red{
+  color: red;
+}
+/*  vertical  */
+.v-middle{
+    vertical-align: middle;
+}
+.v-top{
+    vertical-align: top;
+}
+
+/* icon  */
+.icon{
+  display: inline-block;
+  font-size: 0;
+}
+.icon-user{
+   position: relative;
+   width: 0.44rem;
+   height: 0.44rem;
+   background: url(../images/icon/login_person.png) no-repeat left top;
+   background-size: contain;
+}
+
+.icon-password{
+   position: relative;
+   width: 0.44rem;
+   height: 0.44rem;
+   background: url(../images/icon/login_password.png) no-repeat left top;
+   background-size: contain;
+}
+.icon-agent-no,.icon-agent-in{
+   position: relative;
+   width: 0.29rem;
+   height: 0.29rem;
+   margin-right: 0.2rem;
+   
+}
+.icon-agent-no{
+   background: url(../images/icon/login_agency_no.png) no-repeat left top;
+   background-size: contain;
+}
+.icon-agent-in{
+   background: url(../images/icon/login_agency_in.png) no-repeat left top;
+   background-size: contain;
+}
+
+.icon-member-no,.icon-member-in{
+   position: relative;
+   width: 0.29rem;
+   height: 0.29rem;
+   margin-right: 0.2rem;
+}
+.icon-member-no{
+   background: url(../images/icon/login_member_no.png) no-repeat left top;
+   background-size: contain;
+}
+.icon-member-in{
+   background: url(../images/icon/login_member_in.png) no-repeat left top;
+   background-size: contain; 
+}
+
+/* service icon */
+.icon-service{
+   width: .53rem;
+   height: .6rem;
+   background: url(../images/icon/service_online.png) no-repeat left top;
+   background-size: contain; 
+}
+
+.icon-complaint{
+   width: .53rem;
+   height: .6rem;
+   background: url(../images/icon/service_complain.png) no-repeat left top;
+   background-size: contain; 
+}
+
+.icon-service_offer{
+   width: .53rem;
+   height: .6rem;
+   background: url(../images/icon/service_offer.png) no-repeat left top;
+   background-size: contain; 
+}
+
+.icon-service_order{
+   width: .53rem;
+   height: .6rem;
+   background: url(../images/icon/service_order.png) no-repeat left top;
+   background-size: contain; 
+}
+.icon-service_help{
+   width: .53rem;
+   height: .6rem;
+   background: url(../images/icon/service_help.png) no-repeat left top;
+   background-size: contain; 
+}
+
+.icon-service_phone{
+   width: .53rem;
+   height: .6rem;
+   background: url(../images/icon/service_phone.png) no-repeat left top;
+   background-size: contain; 
+}
+
+.icon-order_phone{
+   width: .44rem;
+   height: .44rem;
+   background: url(../images/icon/order_phone.png) no-repeat left top;
+   background-size: contain; 
+}
+
+.icon-order_qq{
+   width: .44rem;
+   height: .44rem;
+   background: url(../images/icon/order_qq.png) no-repeat left top;
+   background-size: contain; 
+}
+
+
+.icon-order_mail{
+   width: .44rem;
+   height: .44rem;
+   background: url(../images/icon/order_mail.png) no-repeat left top;
+   background-size: contain; 
+}
+.icon-setting{
+   width: .44rem;
+   height: .44rem;
+   background: url(../images/icon/mine_top_set.png) no-repeat left top;
+   background-size: contain;  
+}
+
+.icon-mine_indent_all{
+   width: .44rem;
+   height: .44rem;
+   background: url(../images/icon/mine_indent_all.png) no-repeat left top;
+   background-size: contain;  
+}
+
+.icon-mine_indent_pay{
+   width: .44rem;
+   height: .44rem;
+   background: url(../images/icon/mine_indent_pay.png) no-repeat left top;
+   background-size: contain;  
+}
+
+.icon-mine_indent_sh{
+   width: .44rem;
+   height: .44rem;
+   background: url(../images/icon/mine_indent_sh.png) no-repeat left top;
+   background-size: contain;  
+}
+
+.icon-mine_indent_pl{
+   width: .44rem;
+   height: .44rem;
+   background: url(../images/icon/mine_indent_pl.png) no-repeat left top;
+   background-size: contain;  
+}
+
+
+.icon-mine_news,.icon-mine_content,.icon-mine_asset,.icon-mine_dl,.icon-mine_safety,.icon-mine_address,.icon-mine_member{
+   width: .34rem;
+   height: .34rem;
+   
+}
+.icon-mine_news{
+   background: url(../images/icon/mine_news.png) no-repeat left top;
+   background-size: contain;  
+}
+
+.icon-mine_content{
+   background: url(../images/icon/mine_content.png) no-repeat left top;
+   background-size: contain;  
+}
+.icon-mine_asset{
+   background: url(../images/icon/mine_asset.png) no-repeat left top;
+   background-size: contain;  
+}
+.icon-mine_dl{
+   background: url(../images/icon/mine_dl.png) no-repeat left top;
+   background-size: contain;  
+}
+.icon-mine_safety{
+   background: url(../images/icon/mine_safety.png) no-repeat left top;
+   background-size: contain;  
+}
+.icon-mine_address{
+   background: url(../images/icon/mine_address.png) no-repeat left top;
+   background-size: contain;  
+}
+.icon-mine_member{
+   background: url(../images/icon/mine_member.png) no-repeat left top;
+   background-size: contain;   
+}
+
+
+.icon-home_collect-_in{
+   width: .46rem;
+   height: .46rem;
+   background: url(../images/icon/home_collect-_in.png) no-repeat left top;
+   background-size: contain;  
+}
+
+
+.icon-phone_lock{
+   width: .3rem;
+   height: .3rem;
+   background: url(../images/icon/phone_lock.png) no-repeat left center;
+   background-size: contain;  
+}
+
+.icon-phone_phone{
+   width: .3rem;
+   height: .3rem;
+   background: url(../images/icon/phone_phone.png) no-repeat left center;
+   background-size: contain;  
+}
+
+.icon-phone_code{
+   width: .3rem;
+   height: .3rem;
+   background: url(../images/icon/phone_code.png) no-repeat left center;
+   background-size: contain;  
+}
+
+.icon-phone_mail{
+   width: .3rem;
+   height: .3rem;
+   background: url(../images/icon/phone_mail.png) no-repeat left center;
+   background-size: contain;  
+}
+
+.icon-myaddress_add{
+   width: .4rem;
+   height: .4rem;
+   background: url(../images/icon/personal_myaddress_add.png) no-repeat left center;
+   background-size: contain;  
+}
+
+.icon-myaddress_phone{
+   width: .4rem;
+   height: .4rem;
+   background: url(../images/icon/personal_myaddress_phone.png) no-repeat left center;
+   background-size: contain;  
+}
+.icon-arrow-right{
+   width: .32rem;
+   height: .32rem;
+   background: url(../images/icon/arrow-right.png) no-repeat right center;
+   background-size: contain;
+}
+.icon-login_camera{
+   width: .44rem;
+   height: .34rem;
+   background: url(../images/icon/login_camera.png) no-repeat right center;
+   background-size: contain;
+}
+
+
+
+
+/* border */
+.b-right-yellow{
+    border-right: 1px solid #e5d09c;
+}
+.b-bottom{
+    border-bottom: 1px solid #dddddd;
+}
+.b-top{
+    border-top: 1px solid #dddddd;
+}
+.b-right{
+    border-right: 1px solid #dddddd;
+}
+.b-left{
+    border-left: 1px solid #dddddd;
+}
+/* tab */
+
+.pkq-tab-head{
+    display:-moz-box;  
+    display:-webkit-box;  
+    display:box;
+    display:-moz-flex;  
+    display:-webkit-flex;  
+    display:flex;   
+}
+.pkq-tab-head-item{
+   -moz-box-flex:1;
+   -webkit-box-flex:1;
+   box-flex:1;
+   -webkit-flex:1 1 auto;
+   -moz-flex:1 1 auto;
+   flex:1 1 auto;
+}
+
+
+/* col */
+.col-1{
+    width: 10%;
+}
+.col-2{
+    width: 20%;
+}
+.col-3{
+    width: 30%;
+}
+.col-4{
+    width: 25%;
+}
+.col-40{
+    width: 40%;
+}
+.col-5{
+    width: 50%;
+}
+.col-6{
+    width: 60%;
+}
+.col-7{
+    width: 70%;
+}
+.col-8{
+    width: 80%;
+}
+.col-9{
+    width: 90%;
+}
+.col-10{
+    width: 100%;
+}
+
+
+
+/* radio */
+.radio{
+  width: 0.36rem;
+  height: 0.36rem;
+  display: inline-block;
+  background: url(../images/icon/personal_address_choose_no.png) no-repeat left top;
+  background-size: cover;
+}
+.radio-active{
+
+}
+
+
+
+/* weui */
+.toolbar .toolbar-inner{
+    height: 1rem;
+}
+.toolbar .title,.toolbar .picker-button {
+    font-size: .3rem;
+    line-height: 1rem;
+}
+
+
+/* validate start */
+.errorContainer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  min-width: 60%;
+  text-align: center;
+  color: #fff;
+  font-size: 0.26rem;
+  line-height: 0.36rem;
+  padding: 0.1rem 0;
+  border-radius: .2rem;
+}
+
+.errorContainer li {
+  padding: 0.1rem 0;
+}
+
+.errorContainer label {
+  margin: 0;
+}
+.validates-relative{
+  position: relative;
+}
+.validates-input{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

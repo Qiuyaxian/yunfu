@@ -1,0 +1,72 @@
+.help-html{
+	background: #f0f0f0;
+}
+.help-search{
+	background: #b9a36a;
+	overflow: hidden;
+	padding: 0.2rem 0;
+}
+.help-search-left{
+	width: 75%;
+	font-size: 0.26rem;
+	background: #e6e7e8;
+	margin-left: 0.3rem;
+	
+}
+.help-search-info{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0.15rem;
+	padding-left: 0.45rem;	
+}
+.help-search-info input{
+	display: block;
+	width: 3.5rem;
+	height: 100%;
+	font-size: 0.25rem;
+	background: #e6e7e8;
+}
+.help-search-btn{
+	width: 18%;
+	font-size: 0.3rem;
+	margin-top: 0.15rem;
+	text-align: center;
+}
+.help-search-btn input{
+	background: #b9a36a;
+	font-size: 0.3rem;
+}
+.help-menu ul{
+	overflow: hidden;
+	padding: 0.3rem;
+	background: #f0f0f0;
+	font-size: 0.25rem;
+}
+.help-menu-option{
+	padding: 0.2rem;
+	float: left;
+	border: 1px solid #000000;
+	margin-right:0.15rem;
+}
+.helo-list-question{
+	padding: 0.3rem;
+	border-bottom: 1px solid #e6e6e6;
+	font-size: 0.25rem;
+}
+.help-help_dot{
+	display: block;
+	width: 0.1rem;
+	margin-right:0.25rem; 
+	float: left;
+}
+.help_help_search{
+	display: block;
+	width: 0.3rem;
+	float: left;
+	margin-right: 0.1rem;
+}
+.help-container .active{
+	background: #2c2c2e;
+	color: #ffffff;
+}
